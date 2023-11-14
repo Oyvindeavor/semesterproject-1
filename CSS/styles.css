@@ -26,13 +26,46 @@ html{
   ┃             Layout Utillites              ┃ 
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 
+  /* flexbox utillites */
+.flex{
+    display: flex;
+}
+
+.direction-column{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.center-everything{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* List utillites */
+.no-list li{
+    list-style-type: none;
+}
+
+.no-list.inline li{
+    list-style-type: none;
+    display: inline-block;
+}
 
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Header                    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
   .navigation{
-    
+
   }
 
 
