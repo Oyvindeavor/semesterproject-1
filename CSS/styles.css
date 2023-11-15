@@ -18,9 +18,12 @@
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Global                    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
-ul li a{
-    
-    text-decoration: none;
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -55,15 +58,8 @@ ul li a{
     justify-content: space-between;
 }
 
-/* List utillites */
-.no-list li{
-    list-style-type: none;
-}
+/* Other utillites */
 
-.no-list.inline li{
-    list-style-type: none;
-    display: inline-block;
-}
 
 
 
@@ -73,16 +69,15 @@ ul li a{
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 
 
-  .navigation{
-
-  }
 
 
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Main                      ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
-
+  main{
+      min-height: 90vh;
+  }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Footer                    ┃
@@ -99,15 +94,15 @@ ul li a{
   ┃   CSS Rules for Mobile    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 @media only screen and (max-width: 768px) {
+  .navigation{
     
+  }
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃   CSS Rules for Tablets   ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-.navigation{
-  
-}
+
 }
 
