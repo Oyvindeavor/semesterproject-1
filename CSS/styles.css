@@ -18,8 +18,9 @@
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Global                    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
-html{
-
+ul li a{
+    
+    text-decoration: none;
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -50,6 +51,10 @@ html{
     text-align: center;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
 /* List utillites */
 .no-list li{
     list-style-type: none;
@@ -61,9 +66,13 @@ html{
 }
 
 
+
+
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Header                    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
+
+
   .navigation{
 
   }
@@ -98,6 +107,7 @@ html{
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 .navigation{
+  
+}
+}
 
-}
-}
