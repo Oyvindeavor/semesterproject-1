@@ -192,6 +192,11 @@ p {
     /* Hides the checkbox */
     display: none;
   }
+
+  /* Hero */
+  .hero{
+    height: 300px;
+  }
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
