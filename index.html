@@ -1,81 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Test" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Test" />
-  <title>Home</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="CSS/styles.css" />
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="flex space-between">
-    <!-- Logo -->
-    <div class="logo">
-      <a href="index.html"><img src="favicon-32x32.png" alt="Clickable Logo" /></a>
-    </div>
-    <!-- Navigation -->
-    <nav class="navigation">
+  <body>
+    <!-- Header -->
+    <header class="space-between">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html"><img src="favicon-32x32.png" alt="Clickable Logo" /></a>
+      </div>
+      <!-- Navigation -->
+      <nav class="navigation">
+        <ul class="space-evenly">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Placeholder</a></li>
+          <li><a href="index.html">Placeholder</a></li>
+          <li><a href="index.html">Placeholder</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger menu hidden by default activated in media querys for mobile -->
+      <nav class="hamburger">
+        <input type="checkbox" id="hamburger-on" />
+        <label for="hamburger-on" class="hamburger-button">
+          <span class="material-symbols-outlined">menu</span>
+        </label>
+        <aside class="hamburger-menu">
+          <a href="index.html"><span class="material-symbols-outlined close-icon"> close </span></a>
+          <ul class="no-list">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="visit.html">Visit</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <section class="hero">
+        <img src="https://placehold.co/600x400?text=Hero-Section" alt="Hero image" />
+      </section>
+      <h1>Remember to use h1 on every page</h1>
+      <section>
+        <h2>Main section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque magnam dolores excepturi quaerat reprehenderit minus cupiditate minima impedit molestiae. Ipsa saepe veritatis rem
+          accusamus consequuntur quas nemo, et ad!
+        </p>
+      </section>
+    </main>
+    <!-- Horizontal line -->
+    <hr />
+    <footer class="space-between">
+      <!-- Footer -->
+      <div class="logo">
+        <a href="index.html"><img src="favicon-32x32.png" alt="Clickable Logo" /></a>
+      </div>
       <ul class="flex">
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html">Placeholder</a></li>
         <li><a href="index.html">Placeholder</a></li>
         <li><a href="index.html">Placeholder</a></li>
       </ul>
-    </nav>
-    <!-- Hamburger menu hidden by default activated in media querys for mobile -->
-    <nav class="hamburger">
-      <input type="checkbox" id="hamburger-on">
-      <label for="hamburger-on" class="hamburger-button">
-        <span class="material-symbols-outlined">menu</span>
-      </label>
-      <aside class="hamburger-menu">
-        <a href="index.html"><span class="material-symbols-outlined close-icon"> close </span></a>
-        <ul class="no-list">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="visit.html">Visit</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </aside>
-    </nav>
-  </header>
-  <!-- Horizontal line -->
-  <hr>
-  <!-- Main content -->
-  <main>
-    <h1>Remember to use h1 on every page</h1>
-    <section>
-      <h2>Main section</h2>
-      <p>Lorem ipsum dolor si</p>
-    </section>
-  </main>
-  <!-- Horizontal line -->
-  <hr>
-  <footer class="flex space-between">
-    <!-- Footer -->
-    <div class="logo">
-      <a href="index.html"><img src="favicon-32x32.png" alt="Clickable Logo" /></a>
-    </div>
-    <ul class="flex">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html">Placeholder</a></li>
-      <li><a href="index.html">Placeholder</a></li>
-      <li><a href="index.html">Placeholder</a></li>
-    </ul>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
