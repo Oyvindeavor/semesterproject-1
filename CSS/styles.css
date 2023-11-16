@@ -67,10 +67,14 @@ ul{
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Header                    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
+  /* Hide hamburger menu */
+.hamburger{
+  display: none;
+}
 
-
-
-
+header{
+  margin: 10px;
+}
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Main                      ┃
@@ -94,15 +98,71 @@ ul{
   ┃   CSS Rules for Mobile    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 @media only screen and (max-width: 768px) {
+ 
+  /* Navigation */
+
+ /* Hides main navigation */
   .navigation{
-    
+    display: none;
   }
+  /* Hamburger Menu */
+
+  .hamburger {
+    display: block; 
+    position: fixed; 
+    right: 0;
+    z-index: 1;
+  }
+
+  .hamburger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1; 
+    width: 100vw;
+    transition: left 0.3s ease;
+    font-size: 40px;
+    filter: box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    background-color: black;
+  }
+
+  .hamburger-menu a {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .close-icon{
+    position: absolute;
+    right: 0;
+    margin: 10px;
+  }
+
+  input#hamburger-on:checked + label.hamburger-menu + aside.hamburger-menu {
+    right: 0;
+  }
+
+  input#hamburger-on:not(:checked) + label.hamburger-button + aside.hamburger-menu {
+    left: 100%;
+    transition: ease-out 0.3s;
+  }
+
+  input[type="checkbox"] {
+    /* Hides the checkbox */
+    display: none;
+  }
+  
+
+
+  
+  
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃   CSS Rules for Tablets   ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
+ 
 }
 
