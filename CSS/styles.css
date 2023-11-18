@@ -95,8 +95,28 @@ header {
   width: 100vw;
 }
 
+/* Navigation */
 .navigation {
   width: 50%;
+  padding: 20px;
+}
+
+.navigation li {
+  margin-right: 20px; 
+}
+
+.navigation li:hover{
+  border-bottom: solid white;
+}
+
+.navigation a {
+  color: white; 
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #d5cccc; 
 }
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Main                      ┃
