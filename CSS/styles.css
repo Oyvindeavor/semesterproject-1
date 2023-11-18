@@ -44,12 +44,18 @@ html {
 .align-center,
 .center-everything,
 .space-between,
-.space-evenly {
+.space-evenly,
+.diretion-row,
+.wrap {
   display: flex;
 }
 
 .direction-column {
   flex-direction: column;
+}
+
+.diretion-row {
+  flex-direction: row;
 }
 
 .justify-center {
@@ -121,7 +127,8 @@ header {
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Main                      ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
-main {
+
+main{
   height: 100vh;
   width: 100vw;
 }
@@ -135,7 +142,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color: white; /* white text color */
+  color: white; 
 }
 
 .hero-text {
