@@ -136,7 +136,7 @@ main {
 
 .news {
   background-color: gray;
-  height: 200px;
+  height: auto;
 }
 
 .news div {
