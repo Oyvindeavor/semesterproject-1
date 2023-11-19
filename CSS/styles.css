@@ -108,27 +108,27 @@ header {
 }
 
 .navigation li {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
-.navigation li:hover{
+.navigation li:hover {
   border-bottom: solid white;
 }
 
 .navigation a {
-  color: white; 
+  color: white;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .navigation a:hover {
-  color: #d5cccc; 
+  color: #d5cccc;
 }
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Main                      ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 
-main{
+main {
   height: 100vh;
   width: 100vw;
 }
@@ -142,7 +142,7 @@ main{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color: white; 
+  color: white;
 }
 
 .hero-text {
@@ -158,8 +158,6 @@ main{
   height: 30%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
 
 .news {
   background-color: gray;
