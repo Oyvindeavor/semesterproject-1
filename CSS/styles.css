@@ -13,6 +13,7 @@
   --body-text-font: "GFS Didot", serif;
   --second-font: "Bodoni Moda", serif;
   --headline-text: 'Exo', sans-serif;
+  --text-emphasis-color: #ff9900;
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -24,10 +25,6 @@ a {
 
 ul {
   list-style-type: none;
-}
-
-img {
-  max-width: 100%;
 }
 
 html {
@@ -85,6 +82,11 @@ html {
   flex-wrap: wrap;
 }
 
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
 /* Other utillites */
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -93,6 +95,10 @@ html {
 /* Hide hamburger menu */
 .hamburger {
   display: none;
+}
+
+.logo{
+  width: 150px;
 }
 
 header {
@@ -113,7 +119,7 @@ header {
 }
 
 .navigation li:hover {
-  border-bottom: solid white;
+  border-bottom: solid rgb(255, 255, 255);
 }
 
 .navigation a {
@@ -122,9 +128,7 @@ header {
   transition: color 0.3s ease;
 }
 
-.navigation a:hover {
-  color: #d5cccc;
-}
+
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Main                      ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
@@ -155,12 +159,17 @@ main {
 }
 
 /* Targets all ps nested inside div inside bottom-hero */
-.bottom-hero > div > p{
+.bottom-hero > div > p {
   font-family: var(--second-font);
   font-size: 11pt;
   font-weight: 400;
   line-height: 20pt;
   letter-spacing: 0.1pt;
+}
+
+/* Emphasis color */
+.bottom-hero > div > h2{
+    color: var(--text-emphasis-color)
 }
 
 .news {
@@ -180,6 +189,11 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: gray;
+}
+
+/* Targets all h2 for emphasis color */
+footer > div > h2{
+  color: var(--text-emphasis-color);
 }
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Typography                ┃
@@ -225,6 +239,10 @@ p{
   font-weight: 700;
   line-height: 20pt;
   letter-spacing: 0.1pt;
+}
+
+.emphasis-color {
+  color: var(--text-emphasis-color)
 }
 
 

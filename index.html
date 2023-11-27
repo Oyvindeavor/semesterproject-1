@@ -11,6 +11,10 @@
   <meta name="description"
     content="Welcome to the Community Science Museum. Lets Explore together and discover the wonders of science." />
   <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -18,7 +22,11 @@
   <header class="space-between">
     <!-- Logo -->
     <div class="logo">
-      <a href="index.html"><img src="favicon-32x32.png" alt="Clickable Logo" /></a>
+      <picture>
+        <source media="(min-width: 768px)" srcset="media/logo" />
+        <source media="(min-width: 320px)" srcset="#" />
+        <a href="index.html"><img src="media/logo.png" alt="Clickable Logo" /></a>
+      </picture>
     </div>
     <!-- Navigation -->
     <nav class="navigation">
@@ -64,8 +72,7 @@
     <!-- Hero section -->
     <section class="hero">
       <div class="hero-text center-everything direction-column">
-        <h1>Community Science Museum</h1>
-        <h2>Explore Together</h2>
+        <h1>Explore <span class="emphasis-color">Together</span></h1>
       </div>
       <!-- Hero bottom section -->
     </section>
@@ -153,13 +160,12 @@
   <footer>
     <!-- Logo -->
     <div class="logo">
-      <a href="index.html"><img src="favicon-32x32.png" alt="Clickable Logo" /></a>
-    </div>
-    <!-- Quick Links -->
+      <a href="index.html"><img src="media/logo.png" alt="Clickable Logo" /></a>
+    </div> &copy; 2023 Community Science Museum <!-- Quick Links -->
     <div class="quick-links">
       <h2>Quick Links</h2>
       <ul class="direction-column">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="visit.html">Visit</a></li>
         <li><a href="exhibitions.html">Exhibitions</a></li>
         <li><a href="about.html">About</a></li>
@@ -180,8 +186,8 @@
     <div class="contact">
       <h2>Contact</h2>
       <ul>
-      <li>Phone: 12345678</li>
-      <li>Email:</li>
+        <li>Phone: 12345678</li>
+        <li>Email:</li>
       </ul>
     </div>
     <!-- Social Media -->
@@ -189,16 +195,20 @@
       <h2>Social Media</h2>
       <ul>
         <li>
-          <a href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/" title="Facebook"><i
+              class="fa-brands fa-facebook"></i></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/" title="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
         </li>
         <li>
-          <a href="https://twitter.com/" title="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://twitter.com/" title="Twitter"><i
+              class="fa-brands fa-square-twitter"></i></a>
         </li>
         <li>
-          <a href="https://www.youtube.com/" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/" title="YouTube"><i
+              class="fa-brands fa-youtube"></i></a>
         </li>
       </ul>
     </div>
@@ -207,7 +217,8 @@
       <h2>Opening Hours</h2>
       <ul>
         <li>Monday: Closed</li>
-        <li>Tuesday - Thursday: <time datetime="10:00">10:00</time> – <time datetime="16:00">16:00</time></li>
+        <li>Tue - Thu: <time datetime="10:00">10:00</time> – <time datetime="16:00">16:00</time>
+        </li>
         <li>Friday: <time datetime="10:00">10:00</time> – <time datetime="19:00">19:00</time></li>
         <li>Saturday: <time datetime="09:00">9:00</time> – <time datetime="16:00">16:00</time></li>
         <li>Sunday: <time datetime="09:00">9:00</time> – <time datetime="13:00">13:00</time></li>
