@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=Exo:wght@400;700&family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Exo:wght@400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -10,9 +10,9 @@
   ┃                Variables                  ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 :root {
-  --body-text-font: "GFS Didot", serif;
-  --second-font: "Bodoni Moda", serif;
-  --headline-text: 'Exo', sans-serif;
+  --body-text-font: 'Exo', sans-serif;
+  --second-font:'Dosis', sans-serif;
+  --headline-text: 'Dosis', sans-serif;
   --background-color: #1D1A19;
   --text-emphasis-color: #ff9900;
   --navbar-color: #333333;
@@ -30,9 +30,6 @@ ul {
   list-style-type: none;
 }
 
-html {
-  overflow-x: hidden;
-}
 
 
 
@@ -100,6 +97,7 @@ html {
 
 header{
   background-color: var(--navbar-color);
+  
 }
 
 /* Hide hamburger menu */
@@ -108,13 +106,13 @@ header{
 }
 
 .navbar{
-  width: 100%;
   height: 150px;
+  margin-left: 60px;
 }
 
 .logo{
-  height: 400px;
-  width: 400px;
+  height: 150px;
+  width: 140px;
 }
 
 /* Navigation */
@@ -144,17 +142,27 @@ header{
 
 main {
  background-color: var(--background-color);
+ 
 }
 
 /* Hero section */
+
+
+
 .hero {
-  height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/andrew-ruiz-348421.jpg"); /* Background img with overlay */
-  background-position: center;
+  height: 430px;
+  max-width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-desktop2.jpg"); /* Background img with overlay */
+  background-position:bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   color: white;
+}
+
+.hero-text {
+  width: 100%;
+  height: 100%;
+  font-size: 36pt;
 }
 
 /* Emphasis color */
@@ -167,14 +175,59 @@ main {
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Footer                    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
-footer {
-  background-color: var(--footer-color);
+
+  footer{
+    height: 450px;
+    background-color: var(--footer-color);
+    color: white;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-areas:
+      'social-media social-media social-media social-media'
+      'hr hr hr hr '
+      '. . . . '
+      '. . . . '
+      'logo opening-hours address shortcuts';
+    gap: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 10px;
+  }
+
+.social-media{grid-area: social-media;}
+.logo{grid-area: logo;}
+.opening-hours{grid-area: opening-hours;}
+.address{grid-area: address;}
+.shortcuts{grid-area: shortcuts;}
+.horizontal-line{grid-area: hr;}
+
+
+
+
+/* Social media icons */
+.social-media{
+  padding-top: 40px;
+  font-size: 60px;
+  color: white;
+  
+
 }
 
-/* Targets all h2 for emphasis color */
-footer > div > h2{
-  color: var(--text-emphasis-color);
+.social-media a{
+  color: white;
+  height: 40px;
+  padding-right: 10px;
 }
+
+.horizontal-line{
+  
+  border-color: white;
+  height: 0.5px;
+}
+/* --------------------------*/
+
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Typography                ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
@@ -205,12 +258,6 @@ p{
   font-weight: 400;
   line-height: 24pt;
   letter-spacing: 0.5pt;
-}
-
-.hero-text {
-  width: 100%;
-  height: 100%;
-  font-size: 36pt;
 }
 
 .label{
@@ -244,7 +291,7 @@ p{
 
   .hamburger {
     display: block;
-    position: fixed;
+    position: relative;
     right: 0;
     z-index: 1;
   }
@@ -288,21 +335,26 @@ p{
     display: none;
   }
 
+  .navbar{
+    margin-left: 10px;
+  }
+
   /* Hero */
   .hero {
-    height: 300px;
+    height: 600px;
   }
 
   .hero-text {
     font-size: 24px;
   }
 
-  /* Footer */
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 400px;
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-mobile.webp"); /* Background img with overlay */
   }
+
+
+  /* Footer */
+
 
   /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃   Typography mobile         ┃
@@ -354,5 +406,84 @@ p{
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃   CSS Rules for Tablets   ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1100px) {
+  .navbar{
+    margin-left: 10px;
+  }
+
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/test-tablet.jpg"); /* Background img with overlay */
+  }
+
+ .navigation{
+  display: none;
+  }
+
+    /* Hamburger Menu */
+
+    .hamburger {
+      display: block;
+      position: fixed;
+      right: 0;
+      z-index: 1;
+    }
+  
+    .hamburger-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      z-index: 1;
+      width: 100vw;
+      transition: left 0.3s ease;
+      font-size: 40px;
+      filter: box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+      background-color: black;
+    }
+  
+    .hamburger-menu a {
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .close-icon {
+      position: absolute;
+      right: 0;
+      margin: 10px;
+    }
+  
+    input#hamburger-on:checked + label.hamburger-menu + aside.hamburger-menu {
+      right: 0;
+    }
+  
+    input#hamburger-on:not(:checked) + label.hamburger-button + aside.hamburger-menu {
+      left: 100%;
+      transition: ease-out 0.3s;
+    }
+  
+    input[type="checkbox"] {
+      /* Hides the checkbox */
+      display: none;
+    }
+
+    /* Footer */
+    .footer {
+      display: grid;
+      grid-template-areas:
+        'opening-hours . address '
+        'hr hr hr  '
+        'shortcuts shortcuts .'
+        'social-media social-media social-media'
+        '. logo .';
+      row-gap: 30px;
+      padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    }
+
+    .footer .logo{
+      height: 250px;
+      width: 250px;
+    }
 }
