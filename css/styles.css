@@ -272,6 +272,10 @@ footer {
   border-color: white;
   height: 0.5px;
 }
+
+.shortcuts > ul > li > a{
+  color: white;
+}
 /* --------------------------*/
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
