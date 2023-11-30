@@ -32,16 +32,15 @@ ul {
   list-style-type: none;
 }
 
-img{
+img {
 
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
-body{
+body {
   background-color: var(--background-color);
 }
-
 
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -99,7 +98,7 @@ body{
 
 /* Other utillites */
 
-.img-flex{
+.img-flex {
   width: 100%;
   display: block;
 }
@@ -138,13 +137,14 @@ header {
 
 
 
-.navigation ul > li > a {
+.navigation ul>li>a {
   padding: 20px
 }
 
 
 
-.navigation li:hover, li a:hover {
+.navigation li:hover,
+li a:hover {
   color: var(--title-text-color);
   transition: color 0.3s ease, transform 0.2s ease;
 
@@ -153,11 +153,12 @@ header {
 .navigation a {
   color: white;
   font-weight: bold;
-  
+
 }
 
 .navigation a.active {
-  color: #ffcc00; /* color for active state */
+  color: #ffcc00;
+  /* color for active state */
 }
 
 
@@ -172,38 +173,39 @@ header {
 .hero {
   height: 430px;
   max-width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-desktop2.jpg"); /* Background img with overlay */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-desktop2.jpg");
+  /* Background img with overlay */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
 }
 
-.main-content{
+.main-content {
   margin: 0 70px;
   height: auto;
 }
 
-.main-content > section{
+.main-content>section {
   margin-bottom: 100px;
 }
 
 .main-content h2 {
-  margin:20px 0px;
+  margin: 20px 0px;
   color: #FE672E;
   border-style: solid;
-  border-width: 0 0  1px;
+  border-width: 0 0 1px;
   border-color: white;
 }
 
 .news-section {
-  margin: 20px auto; 
-  padding: 20px; 
-  background-color: #000000; 
-  border-radius: 8px; 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 8px;
 }
 
-.news-section a{
+.news-section a {
   color: var(--title-text-color);
 }
 
@@ -217,7 +219,7 @@ footer {
   height: auto;
   background-color: var(--footer-color);
   color: white;
-  
+
 }
 
 .footer-container {
@@ -226,13 +228,10 @@ footer {
   margin: 0 60px;
 }
 
-.footer-container > .logo{
+.footer-container>.logo {
   height: 250px;
-    width: 250px;
+  width: 250px;
 }
-
-
-
 
 /* Social media icons */
 .social-media {
@@ -254,10 +253,11 @@ footer {
   height: 0.5px;
 }
 
-.shortcuts > ul > li > a{
+.shortcuts>ul>li>a {
   color: white;
   text-decoration: underline;
 }
+
 /* --------------------------*/
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -265,12 +265,12 @@ footer {
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 
 
-body{
+body {
   color: white;
   font-size: 16px;
 }
 
-p{
+p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: +0.5px;
@@ -279,7 +279,10 @@ p{
 }
 
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--second-font);
   font-size: 22px;
   line-height: 28px;
@@ -287,23 +290,23 @@ h1,h2,h3,h4{
 }
 
 /* Hero text desktop */
-  .hero-text-container {
-    width: 100%;
-    height: 100%;
-  }
+.hero-text-container {
+  width: 100%;
+  height: 100%;
+}
 
-  .hero-text{
-    font-family: var(--second-font);
-    font-size: 57px;
-    line-height: 64px;
-    letter-spacing: -0.25%;
-  }
+.hero-text {
+  font-family: var(--second-font);
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25%;
+}
 
-  footer h3{
-    font-family: var(--body-text-font);
-    font-weight: 400;
-    font-size: 16px;
-  }
+footer h3 {
+  font-family: var(--body-text-font);
+  font-weight: 400;
+  font-size: 16px;
+}
 
 
 .emphasis-color {
@@ -331,14 +334,15 @@ h1,h2,h3,h4{
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/test-tablet.jpg"); /* Background img with overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/test-tablet.jpg");
+    /* Background img with overlay */
   }
 
   .navigation {
     display: none;
   }
 
-  .main-content{
+  .main-content {
     margin: 0 30px;
   }
 
@@ -359,7 +363,7 @@ h1,h2,h3,h4{
     width: 100%;
     transition: left 0.3s ease;
     font-size: 40px;
-    background-color:var(--background-color);
+    background-color: var(--background-color);
     overflow: auto;
   }
 
@@ -370,25 +374,25 @@ h1,h2,h3,h4{
   }
 
 
-  .hamburger-button span{
+  .hamburger-button span {
     font-size: 40px;
     padding: 10px;
     color: #FE672E;
   }
 
-  .close-button > span {
+  .close-button>span {
     font-size: 40px;
     cursor: pointer;
-    color:#FE672E;
+    color: #FE672E;
   }
 
-.top-section-hamburger{
-  border: solid white;
-  padding: 10px;
-}
+  .top-section-hamburger {
+    border-bottom: 1px solid white;
+    padding: 10px;
+  }
 
 
-  #logo-hamburger{
+  #logo-hamburger {
     width: 250px;
     padding: 20px;
 
@@ -396,7 +400,7 @@ h1,h2,h3,h4{
 
 
 
-  input#hamburger-toggle:checked ~ aside.hamburger-menu {
+  input#hamburger-toggle:checked~aside.hamburger-menu {
     left: 0;
     transition: left 0.3s ease;
   }
@@ -406,27 +410,29 @@ h1,h2,h3,h4{
     display: none;
   }
 
-  
-
 }
 
 
 /* Media query for only tablets */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+
   /* Typography */
-  p{
+  p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: +0.25px;
   }
-  
+
   /* Title desktop */
-  h1,h2,h3,h4{
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: +0.15px;
   }
- 
+
 }
 
 /* Media query for only mobile devices */
@@ -434,39 +440,41 @@ h1,h2,h3,h4{
 
   /* Footer */
 
-/* Footer */
-.footer-container{
-  flex-direction: column;
-}
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+  }
 
 
-.social-media{
-  margin-bottom: 30px;
-}
+  .social-media {
+    margin-bottom: 30px;
+  }
+
   /* Typography */
 
-  p{
+  p {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: +0.4px;
   }
-  
+
   /* Title desktop */
-  h1,h2,h3,h4{
+  h1,
+  h2,
+  h3,
+  h4 {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: +0.1px;
   }
- 
+
 
   .hero-text {
-    
+
     font-family: var(--second-font);
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0;
   }
-
-
 
 }
