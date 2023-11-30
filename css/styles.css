@@ -26,6 +26,7 @@
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -122,6 +123,7 @@ header {
 .logo {
   height: 150px;
   width: 140px;
+  min-width: 140px;
 }
 
 /* Navigation */
@@ -225,19 +227,22 @@ footer {
 }
 
 .footer-container {
-  
-  padding-top: 90px;
-  
-  
+  justify-content: space-around;
+  gap: 20px;
+  padding: 100px 0 100px;
 }
 
 .footer-container > div{
-  padding-right: 40px;
+  max-width: 350px;
+  width: 250px;
 }
 
-.footer-container>.logo {
-  height: 250px;
-  width: 250px;
+.footer-container > .logo {
+  max-width: none;
+}
+
+.footer-container a{
+  text-decoration: underline;
 }
 
 /* Social media icons */
@@ -255,10 +260,6 @@ footer {
   padding-right: 10px;
 }
 
-.horizontal-line {
-  border-color: white;
-  height: 0.5px;
-}
 
 
 
@@ -364,12 +365,6 @@ footer h3 {
     margin-left: 10px;
   }
 
-  .hero-text {
-    font-family: var(--second-font);
-    font-size: 45px;
-    line-height: 52px;
-    letter-spacing: 0;
-  }
 
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/test-tablet.jpg");
@@ -456,13 +451,18 @@ footer h3 {
       padding-bottom: 30px;
     }
 
-    .footer-container{
-      margin: 0;
-    }
+    
 }
 
   /* Media query for only tablets */
   @media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    .hero-text {
+      font-family: var(--second-font);
+      font-size: 45px;
+      line-height: 52px;
+      letter-spacing: 0;
+    }
 
     /* Typography */
     p {
@@ -483,6 +483,10 @@ footer h3 {
       letter-spacing: +0.15px;
     }
 
+    .footer-container{
+      flex-direction: column;
+      align-items: center;
+    }
 
   }
 
@@ -496,15 +500,11 @@ footer h3 {
 
 
     /* Footer */
-    .footer-container {
+
+    .footer-container{
       flex-direction: column;
       align-items: center;
     }
-
-    .social-media {
-      margin-bottom: 30px;
-    }
-
 
     
 
