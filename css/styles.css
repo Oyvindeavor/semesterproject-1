@@ -11,7 +11,7 @@
   ┃                Variables                  ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 :root {
-  --body-text-font: "Exo", sans-serif;
+  --body-text-font:"Exo", sans-serif;
   --second-font: "Dosis", sans-serif;
   --background-color: #1d1a19;
   --text-emphasis-color: #ff9900;
@@ -182,7 +182,7 @@ li a:hover {
   margin-bottom: 100px;
 }
 
-.main-content  section img{
+.main-content section img {
   margin-bottom: 60px;
 }
 
@@ -205,10 +205,12 @@ li a:hover {
   color: var(--title-text-color);
 }
 
-.end-quote{
+.end-quote {
   margin: 60px;
   background-color: #21120c;
 }
+
+
 
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -223,9 +225,14 @@ footer {
 }
 
 .footer-container {
-  padding-top: 40px;
-  padding-bottom: 60px;
-  margin: 0 60px;
+  
+  padding-top: 90px;
+  
+  
+}
+
+.footer-container > div{
+  padding-right: 40px;
 }
 
 .footer-container>.logo {
@@ -253,10 +260,7 @@ footer {
   height: 0.5px;
 }
 
-.shortcuts>ul>li>a {
-  color: white;
-  text-decoration: underline;
-}
+
 
 /* --------------------------*/
 
@@ -264,6 +268,33 @@ footer {
   ┃                 Typography                ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 
+  @font-face {
+    font-family: 'Exo';
+    font-weight: 400;
+    src: url('../fonts/Exo-Regular.ttf') format('truetype');
+    font-display: optional;
+  }
+  
+  @font-face {
+    font-family: 'Dosis';
+    font-weight: 400;
+    src: url('../fonts/Dosis-Regular.ttf') format('truetype');
+    font-display: optional;
+  }
+
+  @font-face {
+    font-family: 'Exo';
+    font-weight: 700;
+    src: url('../fonts/Exo-Bold.ttf') format('truetype');
+    font-display: optional;
+  }
+  
+  @font-face {
+    font-family: 'Dosis';
+    font-weight: 700;
+    src: url('../fonts/Dosis-Bold.ttf') format('truetype');
+    font-display: optional;
+  }
 
 body {
   color: white;
@@ -274,7 +305,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: +0.5px;
-  max-width: 50em;
+  max-width: 60em;
   font-family: var(--body-text-font);
 }
 
@@ -306,7 +337,14 @@ footer h3 {
   font-family: var(--body-text-font);
   font-weight: 400;
   font-size: 16px;
+  color: white;
 }
+
+.footer h2{
+  color: #FE672E;
+  font-weight: 700;
+}
+
 
 
 .emphasis-color {
@@ -407,78 +445,94 @@ footer h3 {
 
   input[type="checkbox"] {
     /* Hides the checkbox */
-   display: none;
+    display: none;
 
+  }
+
+  /* footer */
+  .opening-hours,
+    .address,
+    .shortcuts{
+      padding-bottom: 30px;
+    }
+
+    .footer-container{
+      margin: 0;
+    }
 }
 
+  /* Media query for only tablets */
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
 
-/* Media query for only tablets */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* Typography */
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: +0.25px;
+      max-width: 50rem;
+      word-wrap: break-word;
+    }
 
-  /* Typography */
-  p {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: +0.25px;
+    /* Title desktop */
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: +0.15px;
+    }
+
+
   }
 
-  /* Title desktop */
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: +0.15px;
+  /* Media query for only mobile devices */
+  @media only screen and (max-width: 599px) {
+
+    /* nav */
+    #logo-hamburger {
+      width: 170px;
+    }
+
+
+    /* Footer */
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social-media {
+      margin-bottom: 30px;
+    }
+
+
+    
+
+    /* Typography */
+
+    p {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: +0.4px;
+      max-width: 59rem;
+      word-wrap: break-word;
+    }
+
+    /* Title desktop */
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: +0.1px;
+    }
+
+    .hero-text {
+
+      font-family: var(--second-font);
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0;
+    }
   }
-
-}
-
-/* Media query for only mobile devices */
-@media only screen and (max-width: 599px) {
-
-/* nav */
-#logo-hamburger{
-  width: 170px;
-}
-
-  /* Footer */
-
-  /* Footer */
-  .footer-container {
-    flex-direction: column;
-  }
-
-
-  .social-media {
-    margin-bottom: 30px;
-  }
-
-  /* Typography */
-
-  p {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: +0.4px;
-  }
-
-  /* Title desktop */
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: +0.1px;
-  }
-
-
-  .hero-text {
-
-    font-family: var(--second-font);
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0;
-  }
-
-}
