@@ -398,12 +398,12 @@ footer h3 {
 
   }
 
-
-
   input#hamburger-toggle:checked~aside.hamburger-menu {
     left: 0;
     transition: left 0.3s ease;
   }
+
+  
 
   input[type="checkbox"] {
     /* Hides the checkbox */
