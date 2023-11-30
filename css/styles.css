@@ -272,28 +272,28 @@ footer {
     font-family: 'Exo';
     font-weight: 400;
     src: url('../fonts/Exo-Regular.ttf') format('truetype');
-    font-display: optional;
+    font-display: swap;
   }
   
   @font-face {
     font-family: 'Dosis';
     font-weight: 400;
     src: url('../fonts/Dosis-Regular.ttf') format('truetype');
-    font-display: optional;
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Exo';
     font-weight: 700;
     src: url('../fonts/Exo-Bold.ttf') format('truetype');
-    font-display: optional;
+    font-display: swap;
   }
   
   @font-face {
     font-family: 'Dosis';
     font-weight: 700;
     src: url('../fonts/Dosis-Bold.ttf') format('truetype');
-    font-display: optional;
+    font-display: swap;
   }
 
 body {
