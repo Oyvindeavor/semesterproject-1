@@ -19,9 +19,9 @@
       <div class="navbar space-between align-center">
         <!-- Logo -->
         <div class="logo align-center">
-          <a href="index.html"><img class="img-flex" src="media/logo-desktop.png" alt="Clickable Logo" /></a>
+          <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
         </div>
-        <!-- Navigation -->
+      <!-- Navbar -->
         <nav class="navigation">
           <ul class="flex space-evenly">
             <li><a href="#">Home</a></li>
@@ -34,22 +34,40 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <!-- Navigation end -->
-        <!-- Hamburger menu hidden by default activated in media querys for mobile -->
+        
         <div class="hamburger">
           <nav>
-            <input type="checkbox" id="hamburger-on" />
-            <label for="hamburger-on" class="hamburger-button">
+            <input type="checkbox" id="hamburger-toggle" class="toggle-checkbox" />
+            <label for="hamburger-toggle" class="hamburger-button">
               <span class="material-symbols-outlined">menu</span>
             </label>
             <aside class="hamburger-menu">
-              <a href="index.html"><span class="material-symbols-outlined close-icon"> close </span></a>
-              <ul class="no-list">
+
+              <div class="top-section-hamburger align-center space-between">
+                <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger" alt="Clickable Logo" /></a>
+
+            <label for="hamburger-toggle" class="close-button">
+              <span class="material-symbols-outlined "> close </span>
+            </label>
+            </div>
+              <ul>
                 <li>
                   <a href="index.html">Home</a>
                 </li>
                 <li>
                   <a href="visit.html">Visit</a>
+                </li>
+                <li>
+                  <a href="exhibits.html">Exhibits</a>
+                </li>
+                <li>
+                  <a href="events.html">Events</a>
+                </li>
+                <li>
+                  <a href="get-involved.html">Get Invovled</a>
+                </li>
+                <li>
+                  <a href="learn.html">Learn</a>
                 </li>
                 <li>
                   <a href="about.html">About</a>
@@ -61,8 +79,8 @@
             </aside>
           </nav>
         </div>
-      </div>
-      <!-- Hamburger menu end -->
+      </div> 
+    <!-- Navbar End-->
     </header>
     <!-- Header END -->
     <!-- Main content -->
@@ -117,7 +135,7 @@
         <a href="https://www.youtube.com" title="Youtube Link"><i class="fa-brands fa-square-youtube"></i></a>
       </div>
       
-      <div class="footer-container space-evenly">
+      <div class="footer-container space-evenly wrap">
 
       <div class="logo">
         <a href="index.html"><img class="img-flex" src="media/logo-desktop.png" alt="Community Science Museum Logo" /></a>
