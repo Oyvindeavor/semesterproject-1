@@ -131,6 +131,11 @@ body {
   display: block;
 }
 
+/* For making lists appear */
+ul.listview{
+  list-style-type:circle;
+}
+
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Header                    ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
@@ -146,40 +151,49 @@ header {
 
 .navbar {
   height: 150px;
-  margin-left: 60px;
+  margin-left: 170px;
+  margin-right: 170px ;
 }
 
 .logo {
   height: auto;
-  width: 140px;
-  min-width: 140px;
+  width: 110px;
+  min-width: 100px;
 }
 
 /* Navigation */
 .navigation {
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 60px;
 }
 
-.navigation ul>li>a {
-  padding: 20px;
+.navigation ul{
+  padding-right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .navigation li:hover,
 li a:hover {
   color: var(--title-text-color);
-  transition: color 0.3s ease, transform 0.2s ease;
+  font-size: 23px;
+  transition: color 0.4s ease;
+  transition: 0.4s ease, transform 0.4s ease;
 }
 
 .navigation a {
   color: white;
-  font-weight: bold;
+  font-weight: 700;
+  padding: 10px;
+  font-family: var(--second-font);
+  font-size: 16px;
 }
 
 .navigation a.active {
-  color: #ffcc00;
+  color: var(--title-text-color);
+  text-decoration: underline;
+  font-size: 23px;
   /* color for active state */
 }
 
@@ -201,8 +215,10 @@ li a:hover {
 }
 
 
+
+
 .main-content {
-  margin: 0 70px;
+  margin: 0 170px;
   height: auto;
 }
 
@@ -212,6 +228,10 @@ li a:hover {
 
 .main-content section img {
   margin-bottom: 60px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+
 }
 
 .main-content h2 {
@@ -232,6 +252,8 @@ li a:hover {
 .news-section a {
   color: var(--title-text-color);
 }
+
+
 
 .end-quote {
   margin: 60px;
@@ -357,13 +379,18 @@ footer h3 {
 
     /* Background image hero */
     .hero {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/test-tablet@2x.webp");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-tablet-mobile.webp");
       height: 600px;
       /* Background img with overlay */
     }
   
   .navigation {
     display: none;
+  }
+
+  .navbar{
+    margin: 0;
+    margin-left: 10px;
   }
 
   .main-content {
@@ -436,6 +463,11 @@ footer h3 {
     padding-bottom: 30px;
   }
 
+/* Google maps */
+iframe{
+  height: 300px;
+  width: 100%;
+}
   
 }
 
@@ -519,6 +551,11 @@ footer h3 {
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0;
+  }
+
+  iframe{
+    height: 300px;
+    width: 100%;
   }
 
 
