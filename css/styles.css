@@ -22,14 +22,12 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "Dosis";
   font-weight: 700;
   src: url("../fonts/Dosis-Bold.ttf") format("truetype");
   font-display: swap;
 }
-
 
 * {
   margin: 0;
@@ -132,8 +130,8 @@ body {
 }
 
 /* For making lists appear */
-ul.listview{
-  list-style-type:circle;
+ul.listview {
+  list-style-type: circle;
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -152,7 +150,7 @@ header {
 .navbar {
   height: 150px;
   margin-left: 170px;
-  margin-right: 170px ;
+  margin-right: 170px;
 }
 
 .logo {
@@ -166,7 +164,7 @@ header {
   width: 100%;
 }
 
-.navigation ul{
+.navigation ul {
   padding-right: 20px;
   height: 100%;
   display: flex;
@@ -214,28 +212,19 @@ li a:hover {
   color: white;
 }
 
-
-
-
 .main-content {
   margin: 0 170px;
   height: auto;
 }
 
-.main-content>section {
-  margin-bottom: 100px;
-}
-
 .main-content section img {
-  margin-bottom: 60px;
-  height: 500px;
+  max-height: 500px;
+  min-height: 150px;
   object-fit: cover;
   object-position: center;
-
 }
 
 .main-content h2 {
-  margin: 20px 0px;
   color: #fe672e;
   border-style: solid;
   border-width: 0 0 1px;
@@ -253,11 +242,9 @@ li a:hover {
   color: var(--title-text-color);
 }
 
-
-
 .end-quote {
-  margin: 60px;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
+  margin: 100px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -311,7 +298,6 @@ footer {
   ┃                 Typography                ┃
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 
-
 body {
   color: white;
   font-size: 16px;
@@ -321,7 +307,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: +0.5px;
-  max-width: 60em;
+  max-width: 800px;
   font-family: var(--body-text-font);
 }
 
@@ -333,6 +319,16 @@ h4 {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: +0.15px;
+}
+
+/* Margin */
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /* Hero text desktop */
@@ -376,19 +372,18 @@ footer h3 {
     margin-left: 10px;
   }
 
+  /* Background image hero */
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-tablet-mobile.webp");
+    height: 600px;
+    /* Background img with overlay */
+  }
 
-    /* Background image hero */
-    .hero {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-tablet-mobile.webp");
-      height: 600px;
-      /* Background img with overlay */
-    }
-  
   .navigation {
     display: none;
   }
 
-  .navbar{
+  .navbar {
     margin: 0;
     margin-left: 10px;
   }
@@ -463,12 +458,20 @@ footer h3 {
     padding-bottom: 30px;
   }
 
-/* Google maps */
-iframe{
-  height: 300px;
-  width: 100%;
-}
-  
+  /* Google maps */
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+  }
 }
 
 /* Media query for only tablets */
@@ -485,7 +488,7 @@ iframe{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: +0.25px;
-    max-width: 50rem;
+    max-width: 600px;
     word-wrap: break-word;
   }
 
@@ -503,8 +506,6 @@ iframe{
     flex-direction: column;
     align-items: center;
   }
-
- 
 }
 
 /* Media query for only mobile devices */
@@ -515,9 +516,9 @@ iframe{
     width: 170px;
   }
 
-.hero{
-  height: 400px;
-}
+  .hero {
+    height: 400px;
+  }
 
   /* Footer */
 
@@ -553,10 +554,8 @@ iframe{
     letter-spacing: 0;
   }
 
-  iframe{
+  iframe {
     height: 300px;
     width: 100%;
   }
-
-
 }
