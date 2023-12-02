@@ -231,6 +231,27 @@ li a:hover {
   border-color: white;
 }
 
+.button-section {
+  display: flex;
+  width: 130px;
+  height: 41px;
+  border: solid white 1px;
+  font-size: 14px;
+  font-family: var(--second-font);
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  transition: ease-out 0.3s;
+  line-height: 20px;
+  letter-spacing: +0.1px;
+}
+
+.button-section:hover {
+  border-color: #fe672e;
+  font-size: 17px;
+  transition: ease-in 0.3s;
+}
+
 .news-section {
   margin: 20px auto;
   padding: 20px;
@@ -247,7 +268,7 @@ li a:hover {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
-.exhibits{
+.exhibits {
   padding: 20px;
   margin: 20px auto;
   height: auto;
@@ -256,9 +277,8 @@ li a:hover {
   border-radius: 8px;
 }
 
-.exhibits img{
+.exhibits img {
   border-radius: 2px;
-  
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -573,7 +593,7 @@ footer h3 {
     width: 100%;
   }
 
-  .exhibits-container{
+  .exhibits-container {
     flex-direction: column;
   }
 }
