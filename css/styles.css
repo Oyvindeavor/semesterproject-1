@@ -271,14 +271,16 @@ header {
   padding: 20px;
   margin: 20px auto;
   height: auto;
-  max-width: 800px;
+  max-width: 500px;
   border: 1px solid white;
   border-radius: 8px;
+  background-color: #2f2626;
 }
 
 .exhibits img {
   border-radius: 2px;
 }
+
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Footer                    ┃
