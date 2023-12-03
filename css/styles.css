@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Exo:wght@400;500;700&display=swap");
-
-/* Fallback fonts */
 @font-face {
   font-family: "Exo";
   font-weight: 400;
@@ -29,6 +27,9 @@
   font-display: swap;
 }
 
+/*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃                Resets                     ┃
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +76,9 @@ body {
   ┃             Layout Utillites              ┃ 
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 
-/* flexbox utillites */
+/* =======================
+     =Flexbox Utilitiess
+   ======================= */
 .flex,
 .direction-column,
 .justify-center,
@@ -122,7 +125,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* Other utillites */
+/* ======================
+     =Other Utillities
+   ====================== */
 
 .img-flex {
   width: 100%;
@@ -142,15 +147,8 @@ header {
   background-color: var(--navbar-color);
 }
 
-/* Hide hamburger menu */
-.hamburger {
+.hamburger { /* hides the hamburger menu */
   display: none;
-}
-
-.navbar {
-  height: 150px;
-  margin-left: 170px;
-  margin-right: 170px;
 }
 
 .logo {
@@ -159,40 +157,41 @@ header {
   min-width: 100px;
 }
 
-/* Navigation */
-.navigation {
-  width: 100%;
+/* ===============
+     =Navigation=
+   =============== */
+
+.navbar {
+  height: 150px;
+  margin-left: 170px;
+  margin-right: 170px;
 }
 
 .navigation ul {
+  width: 100%;
   padding-right: 20px;
   height: 100%;
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 
 .navigation li:hover,
-li a:hover {
+.navigation li a:hover {
   color: var(--title-text-color);
   font-size: 23px;
   transition: color 0.4s ease;
   transition: 0.4s ease, transform 0.4s ease;
 }
 
-.navigation a {
-  color: white;
-  font-weight: 700;
+.navigation a{
   padding: 10px;
   font-family: var(--second-font);
   font-size: 16px;
 }
 
-.navigation a.active {
+.navigation a.active { /* Active state */
   color: var(--title-text-color);
   text-decoration: underline;
   font-size: 23px;
-  /* color for active state */
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -204,7 +203,7 @@ li a:hover {
 .hero {
   height: 700px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-desktop.webp");
+  background-image: linear-gradient(rgba(10, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-desktop.webp");
   /* Background img with overlay */
   background-position: center;
   background-repeat: no-repeat;
@@ -343,6 +342,8 @@ p {
   letter-spacing: +0.5px;
   max-width: 800px;
   font-family: var(--body-text-font);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 h1,
@@ -353,20 +354,11 @@ h4 {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: +0.15px;
-}
-
-/* Margin */
-p,
-h1,
-h2,
-h3,
-h4 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* Hero text desktop */
-.hero-text-container {
+.hero-text-container { /* Hero Text Desktop */
   width: 100%;
   height: 100%;
 }
@@ -406,14 +398,12 @@ footer h3 {
     margin-left: 10px;
   }
 
-  /* Background image hero */
-  .hero {
+  .hero { /* Background img with overlay */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/hero-img-tablet-mobile.webp");
     height: 600px;
-    /* Background img with overlay */
   }
 
-  .navigation {
+  .navigation { /* Hides the desktop navigation */
     display: none;
   }
 
@@ -480,9 +470,8 @@ footer h3 {
     transition: left 0.3s ease;
   }
 
-  input[type="checkbox"] {
-    /* Hides the checkbox */
-    display: none;
+  input[type="checkbox"] { /* Hides the checkox */
+    display: none;  
   }
 
   /* footer */
