@@ -1,118 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Exhibits - Community Science Museum</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover a wide range of fascinating exhibits at the Community Science Museum. Dive into the world of science and exploration." />
-    <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
-    <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
-    <link rel="preload" href="fonts/Exo-Bold.ttf" as="font" crossorigin />
-    <link rel="preload" href="fonts/Exo-Regular.ttf" as="font" crossorigin />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <!-- Navbar -->
-      <div class="navbar flex space-between align-center">
-        <!-- Logo -->
-        <div class="logo flex align-center">
-          <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
-        </div>
-        <!-- Logo END -->
-        <!-- Navigation -->
-        <nav class="navigation">
-          <ul class="flex align-center">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="visit.html">Visit</a></li>
-            <li><a class="active" href="#">Exhibits</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="get-involved.html">Get involved</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <title>Exhibits - Community Science Museum</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover a wide range of fascinating exhibits at the Community Science Museum. Dive into the world of science and exploration." />
+  <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
+  <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
+  <link rel="preload" href="fonts/Exo-Bold.ttf" as="font" crossorigin />
+  <link rel="preload" href="fonts/Exo-Regular.ttf" as="font" crossorigin />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <div class="navbar flex space-between align-center">
+      <!-- Logo -->
+      <div class="logo flex align-center">
+        <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
+      </div>
+      <!-- Logo END -->
+      <!-- Navigation -->
+      <nav class="navigation">
+        <ul class="flex align-center">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a class="active" href="#">Exhibits</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="get-involved.html">Get involved</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Navigation END -->
+      <!-- Hamburger menu -->
+      <div class="hamburger">
+        <nav>
+          <input type="checkbox" id="hamburger-toggle" />
+          <label for="hamburger-toggle" class="hamburger-button" title="Open Menu">
+            <span class="material-symbols-outlined">menu</span>
+          </label>
+          <aside class="hamburger-menu">
+            <div class="top-section-hamburger flex align-center space-between">
+              <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger"
+                  alt="Clickable Logo" /></a>
+              <a href="exhibits.html" class="close-button"><span class="material-symbols-outlined">
+                  close </span></a>
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="visit.html">Visit</a>
+              </li>
+              <li>
+                <a href="#">Exhibits</a>
+              </li>
+              <li>
+                <a href="events.html">Events</a>
+              </li>
+              <li>
+                <a href="get-involved.html">Get Invovled</a>
+              </li>
+              <li>
+                <a href="learn.html">Learn</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </aside>
         </nav>
-        <!-- Navigation END -->
-        <!-- Hamburger menu -->
-        <div class="hamburger">
-          <nav>
-            <input type="checkbox" id="hamburger-toggle" />
-            <label for="hamburger-toggle" class="hamburger-button" title="Open Menu">
-              <span class="material-symbols-outlined">menu</span>
-            </label>
-            <aside class="hamburger-menu">
-              <div class="top-section-hamburger flex align-center space-between">
-                <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger" alt="Clickable Logo" /></a>
-                <a href="exhibits.html" class="close-button"><span class="material-symbols-outlined"> close </span></a>
-              </div>
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="visit.html">Visit</a>
-                </li>
-                <li>
-                  <a href="#">Exhibits</a>
-                </li>
-                <li>
-                  <a href="events.html">Events</a>
-                </li>
-                <li>
-                  <a href="get-involved.html">Get Invovled</a>
-                </li>
-                <li>
-                  <a href="learn.html">Learn</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </aside>
-          </nav>
-        </div>
-        <!-- Hamburger Menu END -->
       </div>
-      <!-- Navbar End -->
-    </header>
-    <!-- Header END -->
-    <!-- Main -->
-    <main>
-      <div class="banner">
-        <img src="media/leo-AgkdMHVq2Fk-unsplash.jpg" />
-        <div class="banner-overlay">
-          <div class="overlay-text">
-            <h1>Exhibits</h1>
-            <p>
-              Each display is meticulously curated to engage, educate, and inspire visitors of all ages. From the wonders of the cosmos to the intricacies of robotics, our exhibitions offer a glimpse
-              into the marvels that shape our understanding of the world.
-            </p>
-          </div>
+      <!-- Hamburger Menu END -->
+    </div>
+    <!-- Navbar End -->
+  </header>
+  <!-- Header END -->
+  <!-- Main -->
+  <main>
+    <div class="banner">
+      <img src="media/leo-AgkdMHVq2Fk-unsplash.jpg" />
+      <div class="banner-overlay">
+        <div class="overlay-text">
+          <h1>Exhibits</h1>
+          <p> Each display is meticulously curated to engage, educate, and inspire visitors of all
+            ages. From the wonders of the cosmos to the intricacies of robotics, our exhibitions
+            offer a glimpse into the marvels that shape our understanding of the world. </p>
         </div>
       </div>
-      <div class="exhibits-container flex">
+    </div>
+    <div class=" flex">
+     
+     
+    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+    
+      <div class=" flex">
         <div class="exhibits">
           <picture>
             <source srcset="" />
             <source srcset="" />
             <source srcset="" />
-            <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
+            <img src="media/celso-405219.jpg" />
           </picture>
           <h2>Cosmology</h2>
-          <p>
-            Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various
-            constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Follow the journey of our solar exploration: from early Arab
-            traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.
-          </p>
+          <p> Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’,
+            explores the night sky and what we can see and know about the universe around us. We’ll
+            locate the various constellations and galaxies that can be seen and learn a bit about
+            the early navigators who used the stars to travel by. Follow the journey of our solar
+            exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration
+            of the planets in our solar system. </p>
         </div>
         <div class="exhibits">
           <picture>
@@ -122,79 +134,32 @@
             <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
           </picture>
           <h2>Evolution</h2>
-          <p>
-            For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we
-            have had a framework for exploring and understanding our place in this world. Discover the origins of life on this planet and how the species we know today have evolved our time. You can
-            also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.
+          <p> For centuries, philosophers and scientists have wrestled with the question of our
+            origins. Where do we come from and how did we get here? Since Darwin proposed his theory
+            of evolution we have had a framework for exploring and understanding our place in this
+            world. Discover the origins of life on this planet and how the species we know today
+            have evolved our time. You can also take some time to meet a few of the creatures who
+            didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.
           </p>
         </div>
       </div>
-      <!-- Main Content -->
-      <div class="main-content">
-        <h1>Exhibits</h1>
-        <p>
-          Each display is meticulously curated to engage, educate, and inspire visitors of all ages. From the wonders of the cosmos to the intricacies of robotics, our exhibitions offer a glimpse into
-          the marvels that shape our understanding of the world.
-        </p>
-        <div class="exhibits-container flex">
-          <div class="exhibits">
-            <picture>
-              <source srcset="" />
-              <source srcset="" />
-              <source srcset="" />
-              <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
-            </picture>
-            <h2>Cosmology</h2>
-            <p>
-              Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the
-              various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Follow the journey of our solar exploration: from early
-              Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.
-            </p>
-          </div>
-          <div class="exhibits">
-            <picture>
-              <source srcset="" />
-              <source srcset="" />
-              <source srcset="" />
-              <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
-            </picture>
-            <h2>Evolution</h2>
-            <p>
-              For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we
-              have had a framework for exploring and understanding our place in this world. Discover the origins of life on this planet and how the species we know today have evolved our time. You can
-              also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.
-            </p>
-          </div>
-        </div>
-        <div class="exhibits-container flex">
-          <div class="exhibits">
-            <picture>
-              <source srcset="" />
-              <source srcset="" />
-              <source srcset="" />
-              <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
-            </picture>
-            <h2>Biology and Medicine</h2>
-            <p>
-              From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. For many people their life expectancy is
-              much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look
-              at some major breakthroughs including the discovery of penicillin and the first heart transplant. Many of our great medicinal discoveries have come not only from the lab, but also from
-              observing animals in the wild. Often our fellow creatures have beat us to it.
-            </p>
-          </div>
-          <div class="exhibits">
-            <picture>
-              <source srcset="" />
-              <source srcset="" />
-              <source srcset="" />
-              <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
-            </picture>
-            <h2>Robotcs and Ai</h2>
-            <p>
-              The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future
-              is here. You can even say hello and shake the hand of Rob the Robot.
-            </p>
-          </div>
+      <div class=" flex">
+        <div class="exhibits">
+          <picture>
+            <source srcset="" />
+            <source srcset="" />
+            <source srcset="" />
+            <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
+          </picture>
+          <h2>Biology and Medicine</h2>
+          <p> From micro-organisms to the human body, major breakthroughs in biology are offering us
+            unique insights into the great wonders of the tiny world. For many people their life
+            expectancy is much longer and their quality of life much improved, thanks to the growth
+            of our understanding of medicine. Over a series of exhibits we explore the history of
+            medicine and take a look at some major breakthroughs including the discovery of
+            penicillin and the first heart transplant. Many of our great medicinal discoveries have
+            come not only from the lab, but also from observing animals in the wild. Often our
+            fellow creatures have beat us to it. </p>
         </div>
         <div class="exhibits">
           <picture>
@@ -203,118 +168,137 @@
             <source srcset="" />
             <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
           </picture>
-          <h2>Ecology</h2>
-          <p>
-            The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is
-            here. You can even say hello and shake the hand of Rob the Robot.
-          </p>
+          <h2>Robotcs and Ai</h2>
+          <p> The information revolution is here and robotics and artificial intelligence are the
+            science of the future. From useful home applications of AI to industrial uses of
+            robotics, the future is here. You can even say hello and shake the hand of Rob the
+            Robot. </p>
         </div>
       </div>
-      <!-- Main Content End -->
-    </main>
-    <!-- Main END -->
-    <!-- Footer -->
-    <footer class="footer">
-      <!-- Social Media -->
-      <div class="social-media flex justify-center align-center">
-        <a href="https://www.facebook.com" title="Facebook Link"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.instagram.com" title="Instagram Link"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://www.twitter.com" title="Twitter Link"><i class="fa-brands fa-square-twitter"></i></a>
-        <a href="https://www.youtube.com" title="Youtube Link"><i class="fa-brands fa-square-youtube"></i></a>
+      <div class="exhibits">
+        <picture>
+          <source srcset="" />
+          <source srcset="" />
+          <source srcset="" />
+          <img src="media/3d-render-solar-system-background-with-colourful-nebula.jpg" />
+        </picture>
+        <h2>Ecology</h2>
+        <p> The information revolution is here and robotics and artificial intelligence are the
+          science of the future. From useful home applications of AI to industrial uses of robotics,
+          the future is here. You can even say hello and shake the hand of Rob the Robot. </p>
       </div>
-      <!-- Social Media END -->
-      <!-- Footer Container -->
-      <div class="footer-container flex">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="index.html"><img class="img-flex" src="media/logo-desktop.png" alt="Community Science Museum Logo" /></a>
-        </div>
-        <!-- Logo END -->
-        <!-- Opening Hours -->
-        <div class="opening-hours">
-          <ul>
-            <li>
-              <h2>Opening Hours</h2>
-            </li>
-            <li>
-              <h3>Monday: Closed</h3>
-            </li>
-            <li>
-              <h3>Tue - Thu 10:00 - 16:00</h3>
-            </li>
-            <li>
-              <a href="visit.html">
-                <h3>See all opening hours</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Opening Hours END -->
-        <!-- Address -->
-        <div class="address">
-          <ul>
-            <li>
-              <h2>Address</h2>
-            </li>
-            <li>
-              <h3>Address something123</h3>
-            </li>
-            <li>
-              <h3>5020, Bergen</h3>
-            </li>
-            <li>
-              <h3>+47 55551010</h3>
-            </li>
-            <li>
-              <a href="about.html">
-                <h3>About</h3>
-              </a>
-            </li>
-            <li>
-              <a href="contact.html">
-                <h3>Contact</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Address END -->
-        <!-- Shortcuts -->
-        <div class="shortcuts">
-          <ul>
-            <li>
-              <h2>Shortcuts</h2>
-            </li>
-            <li>
-              <a href="index.html">
-                <h3>Home</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <h3>Exhibits</h3>
-              </a>
-            </li>
-            <li>
-              <a href="events.html">
-                <h3>Events</h3>
-              </a>
-            </li>
-            <li>
-              <a href="get-involved.html">
-                <h3>Get Involved</h3>
-              </a>
-            </li>
-            <li>
-              <a href="learn.html">
-                <h3>Learn</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Shortcuts END -->
+    </div>
+    <!-- Main Content End -->
+  </main>
+  <!-- Main END -->
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Social Media -->
+    <div class="social-media flex justify-center align-center">
+      <a href="https://www.facebook.com" title="Facebook Link"><i
+          class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com" title="Instagram Link"><i
+          class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.twitter.com" title="Twitter Link"><i
+          class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.youtube.com" title="Youtube Link"><i
+          class="fa-brands fa-square-youtube"></i></a>
+    </div>
+    <!-- Social Media END -->
+    <!-- Footer Container -->
+    <div class="footer-container flex">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html"><img class="img-flex" src="media/logo-desktop.png"
+            alt="Community Science Museum Logo" /></a>
       </div>
-      <!-- Footer Container END -->
-    </footer>
-    <!-- Footer END -->
-  </body>
+      <!-- Logo END -->
+      <!-- Opening Hours -->
+      <div class="opening-hours">
+        <ul>
+          <li>
+            <h2>Opening Hours</h2>
+          </li>
+          <li>
+            <h3>Monday: Closed</h3>
+          </li>
+          <li>
+            <h3>Tue - Thu 10:00 - 16:00</h3>
+          </li>
+          <li>
+            <a href="visit.html">
+              <h3>See all opening hours</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Opening Hours END -->
+      <!-- Address -->
+      <div class="address">
+        <ul>
+          <li>
+            <h2>Address</h2>
+          </li>
+          <li>
+            <h3>Address something123</h3>
+          </li>
+          <li>
+            <h3>5020, Bergen</h3>
+          </li>
+          <li>
+            <h3>+47 55551010</h3>
+          </li>
+          <li>
+            <a href="about.html">
+              <h3>About</h3>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <h3>Contact</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Address END -->
+      <!-- Shortcuts -->
+      <div class="shortcuts">
+        <ul>
+          <li>
+            <h2>Shortcuts</h2>
+          </li>
+          <li>
+            <a href="index.html">
+              <h3>Home</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Exhibits</h3>
+            </a>
+          </li>
+          <li>
+            <a href="events.html">
+              <h3>Events</h3>
+            </a>
+          </li>
+          <li>
+            <a href="get-involved.html">
+              <h3>Get Involved</h3>
+            </a>
+          </li>
+          <li>
+            <a href="learn.html">
+              <h3>Learn</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Shortcuts END -->
+    </div>
+    <!-- Footer Container END -->
+  </footer>
+  <!-- Footer END -->
+</body>
+
 </html>
