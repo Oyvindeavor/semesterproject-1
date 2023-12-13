@@ -12,14 +12,12 @@
   <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-<link rel="preload" fetchpriority="high" as="image" href="/media/test1-hero.webp" type="image/webp">
+  <!-- Preloading hero img for different screen sizes -->
+ <link rel="preload" fetchpriority="high" as="image" href="/media/test1-hero.webp" type="image/webp"> 
+ <link rel="preload" fetchpriority="high" as="image" href="/media/testtest.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1300px)"> 
+ <link rel="preload" fetchpriority="high" as="image" href="/media/mobile-test.webp" type="image/webp" media="(max-width: 767px)"> 
+ 
 
- <!----
-   
-  <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
-  <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
-  <link rel="preload" href="fonts/Exo-Bold.ttf" as="font" crossorigin />
-  <link rel="preload" href="fonts/Exo-Regular.ttf" as="font" crossorigin /> -->
 </head>
 
 <body>
@@ -29,7 +27,7 @@
     <div class="navbar flex space-between align-center">
       <!-- Logo -->
       <div class="logo flex align-center">
-        <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
+        <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo"></a>
       </div>
       <!-- Logo END -->
       <!-- Navigation -->
