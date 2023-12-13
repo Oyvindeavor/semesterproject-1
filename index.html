@@ -12,10 +12,15 @@
     content="Welcome to the Community Science Museum. Lets Explore together and discover the wonders of science." />
   <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<link rel="preload" fetchpriority="high" as="image" href="/media/test1-hero.webp" type="image/webp">
+
+ <!----
+   
   <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
   <link rel="preload" href="fonts/Dosis-Regular.ttf" as="font" crossorigin />
   <link rel="preload" href="fonts/Exo-Bold.ttf" as="font" crossorigin />
-  <link rel="preload" href="fonts/Exo-Regular.ttf" as="font" crossorigin />
+  <link rel="preload" href="fonts/Exo-Regular.ttf" as="font" crossorigin /> -->
 </head>
 
 <body>
@@ -94,52 +99,60 @@
   <main>
     <!-- Hero section -->
     <section class="hero">
+      
       <div class="hero-text-container flex center-everything direction-column">
+       
         <h1 class="hero-text">Explore <span class="emphasis-color">Together</span></h1>
         <p>Join us in unraveling science's mysteries <br> and showcasing human marvels.</p>
         <a class="button-section" href="index.html">Plan your visit!</a>
       </div>
     </section>
+   
     <!-- Hero Setion END -->
     <!-- Main Content-->
-    <div class="main-content">
+    <div class="main-content sectionhome">
+     
+    
       <!-- Section 1 -->
-      <section class="box-shadow margin-bottom">
+      <section>
         <h2>Community Science Museum</h2>
         <picture>
-          <source srcset="media/quinn-villarreal-x9z0aFcHiyk-unsplash.jpg"
-            media="(min-width: 1200px)" />
-          <source srcset="media/quinn-villarreal-x9z0aFcHiyk-unsplash.jpg"
-            media="(min-width: 768px)" />
-          <source srcset="media/quinn-villarreal-x9z0aFcHiyk-unsplash.jpg"
-            media="(min-width: 599px)" />
-          <img id="about-us-img" src="media/quinn-villarreal-x9z0aFcHiyk-unsplash.jpg" />
+          <source media="(max-width: 767px)" srcset="media/about-us-mobile.webp">
+          <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/about-us-tablet.webp">
+          <img src="media/test-aboutus.webp" id="about-us-img" class="" alt="Elepehant statue, crowd of people gathering around."/>
         </picture>
+        
         <p> Welcome to the Community Science Museum — where curiosity knows no bounds! Immerse
           yourself in the wonders of science with FREE admission for all. Explore interactive
           exhibits, join thrilling events, and ignite your passion for discovery. Let's embark on a
           journey of learning and fun together! </p>
         <a class="button-section" href="visit.html"> About us </a>
+      
       </section>
       <!-- Section 1 END-->
       <!-- Section 2 -->
-      <section class="box-shadow margin-bottom">
+      <section>
         <h2>Explore the Wonders</h2>
-        <div class="flex space-evenly">
-          <picture>
-            <source srcset="media/maxim-hopman-IayKLkmz6g0-unsplash.jpg"
-              media="(min-width: 1200px)" />
-            <source srcset="" media="768px" />
-            <source srcset="" media="599px" />
-            <img src="media/maxim-hopman-IayKLkmz6g0-unsplash.jpg" alt="" />
+        <div class="image-container ">
+
+          <picture id="img1">
+            <source media="(max-width: 767px)" srcset="media/img1-mobile.webp">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/img1-tablet.webp">
+            <img src="media/img1-desktop.webp"  class="box-shadow2" alt="technology sphere exhibtion 2 people looking at the spheres covered in screens" loading="lazy" />
           </picture>
-          <picture>
-            <source srcset="media/jackie-alexander-tV79ff0YlXM-unsplash.jpg"
-              media="(min-width: 1200px)" />
-            <source srcset="" media="768px" />
-            <source srcset="" media="599px" />
-            <img src="media/jackie-alexander-tV79ff0YlXM-unsplash.jpg" />
+
+          <picture id="img2">
+            <source media="(max-width: 767px)" srcset="media/img2-mobile.webp">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/img2-tablet.webp">
+            <img src="media/img2-desktop.webp"  class="box-shadow2" alt="man looking at a huge globe hanging from the ceiling of the earth" loading="lazy" />
           </picture>
+
+          <picture id="img3" class="box-shadow">
+            <source media="(max-width: 767px)" srcset="media/image-3-mobile.webp">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/image-3-tablet.webp">
+            <img src="media/image-3 desktop.webp" class="box-shadow2" alt="main in a yellow spacesuit and a white space helmet in a cockpit simulation" loading="lazy"/>
+          </picture>
+          
         </div>
         <p> Explore our interactive exhibits, From cosmic enigmas to intricate robotics, our diverse
           displays offer a unique and engaging experience for all. Whether you're a curious learner,
@@ -148,44 +161,41 @@
         </p>
         <a href="exhibits.html" class="button-section">Explore Exhibits</a>
       </section>
-      <!-- Section 2 END-->
-      <!-- Section 3 -->
-      <section class="box-shadow margin-bottom">
+     
+      <section>
         <h2>Engage with Family</h2>
-        <div class="">
+        
           <picture>
-            <source srcset="media/mother-child-looking-old-amphores-museum.jpg"
-              media="(min-width: 1200px)" />
-            <source srcset="" media="768px" />
-            <source srcset="" media="599px" />
-            <img src="media/mother-child-looking-old-amphores-museum.jpg" />
+            <source media="(max-width: 767px)" srcset="media/engage-family-mobile.webp">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/engage-family-tablet.webp">
+            <img src="media/engage-family-desktop.webp" class="box-shadow2" alt="mother and child looking at old pottery in an old amphores museum" loading="lazy" />
           </picture>
-        </div>
+       
         <p> From the marvels of physics to encounters with ancient creatures, our curated
           experiences cater to every member of your group. Join us in making science an adventure
           meant to be shared. Explore, learn, and create lasting memories in the fascinating world
           of our Community Science Museum. And when it's time to recharge, our onsite café offers a
           cozy retreat for you and your family to relax and savor delightful treats. </p>
       </section>
-      <!-- Section 3 END -->
-      <!-- Section 4 -->
-      <section class="box-shadow margin-bottom">
+   
+      <section>
         <h2>Events</h2>
-        <div class="flex space-evenly">
+        <div class="grid sidebyside">
           <picture>
-            <source srcset="media/giu-vicente-FMArg2k3qOU-unsplash.jpg"
-              media="(min-width: 1200px)" />
-            <source srcset="" media="768px" />
-            <source srcset="" media="599px" />
-            <img src="media/giu-vicente-FMArg2k3qOU-unsplash.jpg" />
+            <source media="(max-width: 767px)" srcset="media/events-img1-mobile.webp">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/events-img1-tablet.webp">
+            <img src="media/events-img1-desktop.webp" alt="child looking through a virtual reality headset blue lights in the background" loading="lazy"/>
           </picture>
-          <picture>
-            <source srcset="media/elissa-garcia-ckVjMurwKIs-unsplash.jpg"
-              media="(min-width: 1200px)" />
-            <source srcset="" media="768px" />
-            <source srcset="" media="599px" />
-            <img src="media/elissa-garcia-ckVjMurwKIs-unsplash.jpg" />
+
+
+
+          <picture >
+            <source media="(max-width: 767px)" srcset="media/events-img2-mobile.webp">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/events-img2-tablet.webp">
+            <img src="media/events-img2-desktop.webp" alt="woman in a crowd on an event reaching her hand up" loading="lazy"/>
           </picture>
+
+
         </div>
         <p> Immerse yourself in a calendar of captivating events that go beyond the ordinary at our
           Community Science Museum. From thought-provoking lectures by distinguished experts to
@@ -193,18 +203,15 @@
           curiosity and fosters a love for discovery. </p>
         <a class="button-section" href="events.html">Explore Events</a>
       </section>
-      <!-- Section 4 END -->
-      <!-- Section 5 -->
-      <!-- Section 5 END -->
-      <!-- Section 7 -->
-      <section class="box-shadow margin-bottom">
+      
+
+      <section>
         <h2>Learn</h2>
-        <div class="fl">
+        <div>
           <picture>
-            <source srcset="media/luke-ow-lscNcl_1eWg-unsplash.jpg" media="(min-width: 1200px)" />
-            <source srcset="" media="768px" />
-            <source srcset="" media="599px" />
-            <img src="media/luke-ow-lscNcl_1eWg-unsplash.jpg" />
+            <source media="(max-width: 767px)" srcset="media/learn-img-mobile.webp">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/learn-img-tablet.webp">
+            <img src="media/learn-img-desktop.webp" alt="crowd taking pictures of a hanging dinosaur fossil in the ceiling in an old museum" loading="lazy" />
           </picture>
         </div>
         <p> Discover tailored learning experiences for students, teachers, and researchers. Dive
@@ -212,13 +219,13 @@
           resources. Ignite curiosity and foster knowledge with us. </p>
         <a class="button-section" href="learn.html">Explore Learning</a>
       </section>
-      <!-- Section 7 END -->
+      
       <!-- End Quote -->
       <blockquote class="flex justify-center">
         <h3>"Somewhere, something incredible is waiting to be known." - Carl Sagan</h3>
       </blockquote>
     </div>
-    <!-- Main Content End -->
+   
   </main>
   <!-- Main END -->
   <!-- Footer -->
@@ -236,67 +243,23 @@
     </div>
     <!-- Social Media END -->
     <!-- Footer Container -->
-    <div class="footer-container flex ">
+    <div class="footer-container flex space-between">
       <!-- Logo -->
-      <div class="logo">
-        <a href="index.html"><img class="img-flex" src="media/logo-desktop.png"
-            alt="Community Science Museum Logo" /></a>
+      <div class="logo-footer flex align-center">
+        <a href="index.html"><img src="media/logo-desktop.png"
+            alt="Community Science Museum Logo" class="logo" /></a>
+            
       </div>
       <!-- Logo END -->
-      <!-- Opening Hours -->
-      <div class="opening-hours">
-        <ul>
-          <li>
-            <h2>Opening Hours</h2>
-          </li>
-          <li>
-            <h3>Monday: Closed</h3>
-          </li>
-          <li>
-            <h3>Tue - Thu 10:00 - 16:00</h3>
-          </li>
-          <li>
-            <a href="visit.html">
-              <h3>See all opening hours</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Opening Hours END -->
-      <!-- Address -->
-      <div class="address">
-        <ul>
-          <li>
-            <h2>Address</h2>
-          </li>
-          <li>
-            <h3>Address something123</h3>
-          </li>
-          <li>
-            <h3>5020, Bergen</h3>
-          </li>
-          <li>
-            <h3>+47 55551010</h3>
-          </li>
-          <li>
-            <a href="about.html">
-              <h3>About</h3>
-            </a>
-          </li>
-          <li>
-            <a href="contact.html">
-              <h3>Contact</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Address END -->
+
       <!-- Shortcuts -->
-      <div class="shortcuts">
+      <div class="footer-item">
+        <h2>Shortcuts</h2>
+        <nav>
         <ul>
-          <li>
-            <h2>Shortcuts</h2>
-          </li>
+          
+            
+          
           <li>
             <a href="#">
               <h3>Home</h3>
@@ -323,8 +286,73 @@
             </a>
           </li>
         </ul>
+      </nav>
       </div>
       <!-- Shortcuts END -->
+
+      <!-- Opening Hours -->
+      <div class="footer-item">
+        <ul>
+          <li>
+            <h2>Opening Hours</h2>
+          </li>
+          <li>
+            <h3>Monday: Closed</h3>
+          </li>
+          <li>
+            <h3>Tue - Thu 10:00 - 16:00</h3>
+          </li>
+          <li>
+            <a href="visit.html">
+              <h3>See all opening hours</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Opening Hours END -->
+
+      <!--Address-->
+      
+      <div class="footer-item">
+        <address>
+          <h2>Address</h2>
+          <p>Great Russell St<br>
+          WC1B 3DG, London<br>
+          <a href="tel:+442073238299">+44 2073238299</a></p>
+        </address>
+        
+        <ul>
+          <li><a href="about.html"><h3>About</h3></a></li>
+          <li><a href="contact.html"><h3>Contact</h3></a></li>
+        </ul>
+      </div>
+    
+      <!--Address End-->
+
+       <!--Upcoming Events-->
+       <div class="footer-item">
+        <ul>
+          <li>
+            <h2>Upcoming Events</h2>
+          </li>
+          <li>
+            <h3>Night in the museum</h3>
+          </li>
+          <li>
+            <h3>Energetica Exhibition</h3>
+          </li>
+          <li>
+            <h3>Visiting Professor of- <br> Aeronautics</h3>
+          </li>
+          <li>
+            <a href="events.html">
+              <h3>See all Events</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--Upcoming Events-->
+     
     </div>
     <!-- Footer Container END -->
   </footer>
