@@ -90,7 +90,13 @@
   <main>
     <!-- Main Content -->
     <div class="banner">
-      <img src="media/bruno-martins-3zWncaikTfU-unsplash.jpg" id="visit-img" />
+
+      <picture>
+        <source media="(max-width: 767px)" srcset="media/visit-mobile.webp">
+        <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/visit-tablet.webp">
+        <img src="media/visit-desktop.webp" id="visit-img" />
+      </picture>
+      
       <div class="banner-overlay">
         <div class="overlay-text">
           <h1>Visit Us</h1>
@@ -99,8 +105,8 @@
         </div>
       </div>
     </div>
-    <div class="main-content">
-      <section class="box-shadow margin-bottom ">
+    <div class="main-content headline">
+      <section class="box-shadow  ">
         <h2>Opening Hours</h2>
         <p>Plan your visit conveniently with our flexible hours:</p>
         <ul>
