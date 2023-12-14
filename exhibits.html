@@ -89,7 +89,14 @@
   <!-- Main -->
   <main>
     <div class="banner">
-      <img src="media/leo-AgkdMHVq2Fk-unsplash.jpg" />
+
+      <picture>
+        <source media="(max-width: 767px)" srcset="media/exhibits-mobile.webp">
+        <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/exhibits-tablet.webp">
+        <img src="media/exhibits-desktop.webp" />
+      </picture>
+
+      
       <div class="banner-overlay">
         <div class="overlay-text">
           <h1>Exhibits</h1>
@@ -98,17 +105,16 @@
         </div>
       </div>
     </div>
-    <div class=" flex">
+    <div class="flex">
     </div>
     <!-- Main Content -->
     <div class="main-content">
-      <div class="exhibits-container flex">
-        <div class="exhibits direction-column">
-          <picture>
-            <source srcset="" />
-            <source srcset="" />
-            <source srcset="" />
-            <img src="media/andrew-ruiz-348421.jpg" class="box-shadow2" />
+      <div class="exhibits-container grid">
+        
+        <div class="exhibits">
+          <picture class="cosmology-filter">
+            <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/cosmology-tablet.webp">
+            <img src="media/cosmology-desktop.webp" class="box-shadow2" />
           </picture>
           <div class="exhibit-info">
             <h2>Cosmology</h2>
@@ -120,8 +126,11 @@
               exploration of the planets in our solar system. </p>
           </div>
         </div>
-        <div class="exhibits direction-column">
-          <picture>
+     
+
+
+        <div class="exhibits">
+          <picture class="evolution-filter">
             <source srcset="" />
             <source srcset="" />
             <source srcset="" />
@@ -138,10 +147,10 @@
               dinosaurs too. </p>
           </div>
         </div>
-      </div>
-      <div class="exhibits-container flex ">
-        <div class="exhibits direction-column">
-          <picture>
+    
+      
+        <div class="exhibits">
+          <picture class="biology-filter ">
             <source srcset="" />
             <source srcset="" />
             <source srcset="" />
@@ -159,8 +168,9 @@
               wild. Often our fellow creatures have beat us to it.</p>
           </div>
         </div>
-        <div class="exhibits direction-column">
-          <picture>
+
+        <div class=" exhibits ">
+          <picture class="robotics-filter">
             <source srcset="" />
             <source srcset="" />
             <source srcset="" />
@@ -174,10 +184,10 @@
               Robot.</p>
           </div>
         </div>
-      </div>
-      <div class="exhibits-container flex">
-        <div class="exhibits direction-column">
-          <picture>
+     
+
+        <div class="exhibits">
+          <picture class="ecology-filter ">
             <source srcset="" />
             <source srcset="" />
             <source srcset="" />
