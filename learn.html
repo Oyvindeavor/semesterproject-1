@@ -1,285 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn - Community Science Museum</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Expand your knowledge and learn more about science at the Community Science Museum. Explore educational resources and interactive exhibits." />
+    <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" fetchpriority="high" as="image" href="/media/learn-desktop.webp" type="image/webp" media="(min-width: 1025px)" />
+    <link rel="preload" fetchpriority="high" as="image" href="/media/learn-tablet.webp" type="image/webp" media="(min-width: 768px)" />
+    <link rel="preload" fetchpriority="high" as="image" href="/media/learn-mobile.webp" type="image/webp" media="(max-width: 480px)" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Learn - Community Science Museum</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Expand your knowledge and learn more about science at the Community Science Museum. Explore educational resources and interactive exhibits." />
-  <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-</head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <div class="navbar flex space-between align-center">
+        <!-- Logo -->
+        <div class="logo align-center">
+          <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
+        </div>
 
-<body>
-  <!-- Header -->
-  <header>
-    <!-- Navbar -->
-    <div class="navbar flex space-between align-center">
-      <!-- Logo -->
-      <div class="logo align-center">
-        <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
-      </div>
-      <!-- Logo END -->
-      <!-- Navigation -->
-      <nav class="navigation">
-        <ul class="flex align-center">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="visit.html">Visit</a></li>
-          <li><a href="exhibits.html">Exhibits</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="get-involved.html">Get involved</a></li>
-          <li><a class="active" href="#">Learn</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Navigation END -->
-      <!-- Hamburger menu -->
-      <div class="hamburger">
-        <nav>
-          <input type="checkbox" id="hamburger-toggle" />
-          <label for="hamburger-toggle" class="hamburger-button" title="Open Menu">
-            <span class="material-symbols-outlined">menu</span>
-          </label>
-          <aside class="hamburger-menu">
-            <div class="top-section-hamburger flex align-center space-between">
-              <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger"
-                  alt="Clickable Logo" /></a>
-              <a href="learn.html" class="close-button"><span class="material-symbols-outlined">
-                  close </span></a>
-            </div>
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="visit.html">Visit</a>
-              </li>
-              <li>
-                <a href="exhibits.html">Exhibits</a>
-              </li>
-              <li>
-                <a href="events.html">Events</a>
-              </li>
-              <li>
-                <a href="get-involved.html">Get Invovled</a>
-              </li>
-              <li>
-                <a href="#">Learn</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </aside>
+        <!-- Navigation -->
+        <nav class="navigation">
+          <ul class="flex align-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="exhibits.html">Exhibits</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="get-involved.html">Get involved</a></li>
+            <li><a class="active" href="#">Learn</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-      </div>
-      <!-- Hamburger Menu END -->
-    </div>
-    <!-- Navbar End -->
-  </header>
-  <!-- Header END -->
-  <!-- Main -->
-  <main>
-    <div class="banner">
-      <img src="media/mr-drone-yRaOqofGV3A-unsplash.jpg" />
-      <div class="banner-overlay">
-        <div class="overlay-text">
-          <h1>Learn</h1>
-          <p> Dive into a world of educational resources, interactive activities, and engaging
-            content. Explore, discover, and empower your learning journey with us! </p>
+
+        <!-- Hamburger menu -->
+        <div class="hamburger">
+          <nav>
+            <input type="checkbox" id="hamburger-toggle" />
+            <label for="hamburger-toggle" class="hamburger-button" title="Open Menu">
+              <span class="material-symbols-outlined">menu</span>
+            </label>
+            <aside class="hamburger-menu">
+              <div class="top-section-hamburger flex align-center space-between">
+                <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger" alt="Clickable Logo" /></a>
+                <a href="learn.html" class="close-button"><span class="material-symbols-outlined"> close </span></a>
+              </div>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="visit.html">Visit</a>
+                </li>
+                <li>
+                  <a href="exhibits.html">Exhibits</a>
+                </li>
+                <li>
+                  <a href="events.html">Events</a>
+                </li>
+                <li>
+                  <a href="get-involved.html">Get Invovled</a>
+                </li>
+                <li>
+                  <a href="#" class="active-hamburger">Learn</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </aside>
+          </nav>
         </div>
       </div>
-    </div>
-    <!-- Main Content -->
-    <div class="main-content headline">
-      <section class="box-shadow margin-bottom">
-        <h2>For kids</h2>
-        <picture>
-          <source srcset="" />
-          <source srcset="" />
-          <source srcset="" />
-          <img src="media/youngsters-with-notepads-studying.jpg" alt="" />
-        </picture>
-        <p> Are you a young person looking to learn more about science? Come on down to our museum,
-          there’s plenty to see and do. You can learn about Newtonian physics from our bumper swing,
-          or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are
-          designed to be accessible for interested minds, so make sure you come ready to learn and
-          explore. </p>
-        <h3>interactive Exhibits:</h3>
-        <p>Discover Newtonian physics from our bumper swing, or why not travel back in time and meet
-          our resident Woolly Mammoth?</p>
-        <h3>Young Stars Club:</h3>
-        <p>Join the Young Stars club, meeting every Saturday between 10:00 and 13:00. Explore and
-          experiment with our team of experts!</p>
-        <h3>Holiday Clubs:</h3>
-        <p>During school holidays, join special clubs with new themes to explore. Connect with other
-          children and embark on a journey of discovery. To find out more and join, send us a
-          message.</p>
-      </section>
-      <section class="box-shadow margin-bottom">
-        <h2>For teachers</h2>
-        <picture>
-          <source srcset="" />
-          <source srcset="" />
-          <source srcset="" />
-          <img src="media/woman-two-students-looking-tablet.jpg" alt="" />
-        </picture>
-        <p> As a community-driven museum, we are committed to working with schools to create places
-          of learning and exploration. Our dedicated team is on hand to offer the following
-          educational opportunities for your students: </p>
-        <h3>Guided Tours:</h3>
-        <p>Bring your students for enriching guided tours of the museum. Our exhibits are tailored
-          to complement classroom learning.</p>
-        <h3>Learning Laboratory:</h3>
-        <p>Immerse your students in hands-on learning experiences in our state-of-the-art learning
-          laboratory.</p>
-        <h3>Video Presentations:</h3>
-        <p>Access engaging video presentations crafted to excite and inspire your students about the
-          wonders of science.</p>
-        <h3>Get in Touch</h3>
-        <p>Please get in touch with us to learn more about our facilities and to arrange a visit for
-          your students. We look forward to fostering educational excellence together!</p>
-      </section>
-      <section class="box-shadow margin-bottom">
-        <h2>For Researchers</h2>
-        <picture>
-          <source srcset="" />
-          <source srcset="" />
-          <source srcset="" />
-          <img
-            src="media/neurological-laboratory-with-nobody-it-modernly-equipped-prepared-experiments-development-examining-brain-functions-nervous-system-tomography-scan-scientific-research.jpg" />
-        </picture>
-        <p> Are you looking to get involved with our team of researchers and academics? Our museum
-          offers various opportunities for you to use our resources and contribute towards
-          groundbreaking research. Here's what we provide: </p>
-        <h3>Online Records:</h3>
-        <p>Access our extensive online records to support and enhance your research endeavors.</p>
-        <h3>Laboratory Space:</h3>
-        <p>Utilize our well-equipped laboratory space to conduct experiments and studies.</p>
-        <h3>University Partnerships:</h3>
-        <p>Benefit from our established working relationships with universities around the country
-          for collaborative research initiatives.</p>
-      </section>
-    </div>
-    <!-- Main Content End -->
-  </main>
-  <!-- Main END -->
-  <!-- Footer -->
-  <footer class="footer">
-    <!-- Social Media -->
-    <div class="social-media flex justify-center align-center">
-      <a href="https://www.facebook.com" title="Facebook Link"><i
-          class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.instagram.com" title="Instagram Link"><i
-          class="fa-brands fa-square-instagram"></i></a>
-      <a href="https://www.twitter.com" title="Twitter Link"><i
-          class="fa-brands fa-square-twitter"></i></a>
-      <a href="https://www.youtube.com" title="Youtube Link"><i
-          class="fa-brands fa-square-youtube"></i></a>
-    </div>
-    <!-- Social Media END -->
-    <!-- Footer Container -->
-    <div class="footer-container flex">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html"><img class="img-flex" src="media/logo-desktop.png"
-            alt="Community Science Museum Logo" /></a>
-      </div>
-      <!-- Logo END -->
-      <!-- Opening Hours -->
-      <div class="opening-hours">
-        <ul>
-          <li>
-            <h2>Opening Hours</h2>
-          </li>
-          <li>
-            <h3>Monday: Closed</h3>
-          </li>
-          <li>
-            <h3>Tue - Thu 10:00 - 16:00</h3>
-          </li>
-          <li>
-            <a href="visit.html">
-              <h3>See all opening hours</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Opening Hours END -->
-      <!-- Address -->
-      <div class="address">
-        <ul>
-          <li>
-            <h2>Address</h2>
-          </li>
-          <li>
-            <h3>Address something123</h3>
-          </li>
-          <li>
-            <h3>5020, Bergen</h3>
-          </li>
-          <li>
-            <h3>+47 55551010</h3>
-          </li>
-          <li>
-            <a href="about.html">
-              <h3>About</h3>
-            </a>
-          </li>
-          <li>
-            <a href="contact.html">
-              <h3>Contact</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Address END -->
-      <!-- Shortcuts -->
-      <div class="shortcuts">
-        <ul>
-          <li>
-            <h2>Shortcuts</h2>
-          </li>
-          <li>
-            <a href="index.html">
-              <h3>Home</h3>
-            </a>
-          </li>
-          <li>
-            <a href="exhibits.html">
-              <h3>Exhibits</h3>
-            </a>
-          </li>
-          <li>
-            <a href="events.html">
-              <h3>Events</h3>
-            </a>
-          </li>
-          <li>
-            <a href="get-involved.html">
-              <h3>Get Involved</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <h3>Learn</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Shortcuts END -->
-    </div>
-    <!-- Footer Container END -->
-  </footer>
-  <!-- Footer END -->
-</body>
+    </header>
 
+    <main>
+      <!--Banner-->
+      <div class="banner">
+        <picture>
+          <source media="(max-width: 767px)" srcset="media/learn-mobile.webp" />
+          <source media=" (max-width: 1100px)" srcset="media/learn-tablet.webp" />
+          <img src="media/learn-desktop.webp" alt="Visitors in a gallery with blue lighting and art installations" />
+        </picture>
+
+        <div class="banner-overlay">
+          <div class="overlay-text">
+            <h1>Learn</h1>
+            <p>Dive into a world of educational resources, interactive activities, and engaging content. Explore, discover, and empower your learning journey with us!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content headline">
+        <!--Section 1-->
+        <section class="box-shadow">
+          <h2>For kids</h2>
+          <picture>
+            <source media="(max-width: 767px)" srcset="media/forkids-mobile.webp" />
+            <source media=" (max-width: 1100px)" srcset="media/forkids-tablet.webp" />
+            <img src="media/forkids-desktop.webp" alt="Group of focused students taking notes" />
+          </picture>
+          <p>
+            Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do. You can learn about Newtonian physics from our bumper swing, or why
+            not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+          </p>
+          <h3>interactive Exhibits:</h3>
+          <p>Discover Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth?</p>
+          <h3>Young Stars Club:</h3>
+          <p>Join the Young Stars club, meeting every Saturday between 10:00 and 13:00. Explore and experiment with our team of experts!</p>
+          <h3>Holiday Clubs:</h3>
+          <p>During school holidays, join special clubs with new themes to explore. Connect with other children and embark on a journey of discovery. To find out more and join, send us a message.</p>
+        </section>
+
+        <!--Section 2-->
+        <section class="box-shadow">
+          <h2>For teachers</h2>
+          <picture>
+            <source media="(max-width: 767px)" srcset="media/forteachers-mobile.webp" />
+          <source media=" (max-width: 1100px)" srcset="media/forteachers-tablet.webp" />
+            <img src="media/forteachers-desktop.webp" alt="Teacher assisting two students with a tablet in class" />
+          </picture>
+          <p>
+            As a community-driven museum, we are committed to working with schools to create places of learning and exploration. Our dedicated team is on hand to offer the following educational
+            opportunities for your students:
+          </p>
+          <h3>Guided Tours:</h3>
+          <p>Bring your students for enriching guided tours of the museum. Our exhibits are tailored to complement classroom learning.</p>
+          <h3>Learning Laboratory:</h3>
+          <p>Immerse your students in hands-on learning experiences in our state-of-the-art learning laboratory.</p>
+          <h3>Video Presentations:</h3>
+          <p>Access engaging video presentations crafted to excite and inspire your students about the wonders of science.</p>
+          <h3>Get in Touch</h3>
+          <p>Please get in touch with us to learn more about our facilities and to arrange a visit for your students. We look forward to fostering educational excellence together!</p>
+        </section>
+
+        <!--Section 3-->
+        <section class="box-shadow">
+          <h2>For Researchers</h2>
+          <picture>
+            <source media="(max-width: 767px)" srcset="media/forreaserchers-mobile.webp" />
+          <source media=" (max-width: 1100px)" srcset="media/forresearchers-tablet.webp" />
+            <img
+              src="media/forreaserchers-desktop.webp"
+              alt="Modern neurological lab with brain scans on the monitor"
+            />
+          </picture>
+          <p>
+            Are you looking to get involved with our team of researchers and academics? Our museum offers various opportunities for you to use our resources and contribute towards groundbreaking
+            research. Here's what we provide:
+          </p>
+          <h3>Online Records:</h3>
+          <p>Access our extensive online records to support and enhance your research endeavors.</p>
+          <h3>Laboratory Space:</h3>
+          <p>Utilize our well-equipped laboratory space to conduct experiments and studies.</p>
+          <h3>University Partnerships:</h3>
+          <p>Benefit from our established working relationships with universities around the country for collaborative research initiatives.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <!--Social Media-->
+      <div class="social-media flex justify-center align-center">
+        <a href="https://www.facebook.com" title="Facebook Link"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.instagram.com" title="Instagram Link"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.twitter.com" title="Twitter Link"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="https://www.youtube.com" title="Youtube Link"><i class="fa-brands fa-square-youtube"></i></a>
+      </div>
+
+      <!--Footer Container-->
+
+      <div class="footer-container flex space-between wrap">
+        <!--Logo-->
+        <div class="logo-footer flex align-center">
+          <a href="index.html">
+            <img src="media/logo-desktop.png" alt="Community Science Museum Logo" class="logo" />
+          </a>
+        </div>
+
+        <!--Shortcuts-->
+        <div class="footer-item">
+          <h2>Shortcuts</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="exhibits.html">Exhibits</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="learn.html">Learn</a></li>
+          </ul>
+        </div>
+
+        <!--Opening Hours-->
+        <div class="footer-item">
+          <h2>Opening Hours</h2>
+          <ul>
+            <li>Monday: Closed</li>
+            <li>Tue - Thu 10:00 - 16:00</li>
+            <li><a href="visit.html">See all opening hours</a></li>
+          </ul>
+        </div>
+
+        <!--Address-->
+        <div class="footer-item">
+          <h2>Address</h2>
+          <address>
+            Great Russell St<br />
+            WC1B 3DG, London<br />
+            <a href="tel:+442073238299">+44 2073238299</a>
+          </address>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--Upcoming Events-->
+        <div class="footer-item">
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li>Night in the museum</li>
+            <li>Energetica Exhibition</li>
+            <li>Visiting Professor of Aeronautics</li>
+            <li><a href="events.html">See all Events</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Copyright-->
+      <div class="copyright flex justify-center align-center">
+        <p>Copyright &copy; 2023 Community Science Museum</p>
+      </div>
+    </footer>
+  </body>
 </html>

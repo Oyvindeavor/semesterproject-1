@@ -1,292 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visit - Community Science Museum</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plan your visit to the Community Science Museum. Explore our exhibits, events, and more. Get ready for an exciting science adventure!" />
+    <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Visit - Community Science Museum</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Plan your visit to the Community Science Museum. Explore our exhibits, events, and more. Get ready for an exciting science adventure!" />
-  <script src="https://kit.fontawesome.com/3554cad4e7.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-</head>
+    <!-- Preload banner img for different screen sizes -->
+    <link rel="preload" fetchpriority="high" as="image" href="/media/visit-desktop.webp" type="image/webp" media="(min-width: 1025px)" />
+    <link rel="preload" fetchpriority="high" as="image" href="/media/visit-tablet.webp" type="image/webp" media="(min-width: 768px)" />
+    <link rel="preload" fetchpriority="high" as="image" href="/media/visit-mobile.webp" type="image/webp" media="(max-width: 480px)" />
+  </head>
 
-<body>
-  <!-- Header -->
-  <header>
-    <!-- Navbar -->
-    <div class="navbar flex space-between align-center">
-      <!-- Logo -->
-      <div class="logo flex align-center">
-        <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
-      </div>
-      <!-- Logo END -->
-      <!-- Navigation -->
-      <nav class="navigation">
-        <ul class="flex align-center">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="#">Visit</a></li>
-          <li><a href="exhibits.html">Exhibits</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="get-involved.html">Get involved</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Navigation END -->
-      <!-- Hamburger menu -->
-      <div class="hamburger">
-        <nav>
-          <input type="checkbox" id="hamburger-toggle" />
-          <label for="hamburger-toggle" class="hamburger-button" title="Open Menu">
-            <span class="material-symbols-outlined">menu</span>
-          </label>
-          <aside class="hamburger-menu">
-            <div class="top-section-hamburger flex align-center space-between">
-              <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger"
-                  alt="Clickable Logo" /></a>
-              <a href="visit.html" class="close-button"><span class="material-symbols-outlined">
-                  close </span></a>
-            </div>
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="visit.html">Visit</a>
-              </li>
-              <li>
-                <a href="exhibits.html">Exhibits</a>
-              </li>
-              <li>
-                <a href="events.html">Events</a>
-              </li>
-              <li>
-                <a href="get-involved.html">Get Invovled</a>
-              </li>
-              <li>
-                <a href="learn.html">Learn</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </aside>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <div class="navbar flex space-between align-center">
+        <!-- Logo -->
+        <div class="logo flex align-center">
+          <a href="index.html"><img src="media/logo-desktop.png" alt="Clickable Logo" /></a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+          <ul class="flex align-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">Visit</a></li>
+            <li><a href="exhibits.html">Exhibits</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="get-involved.html">Get involved</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-      </div>
-      <!-- Hamburger Menu END -->
-    </div>
-    <!-- Navbar End -->
-  </header>
-  <!-- Header END -->
-  <!-- Main -->
-  <main>
-    <!-- Main Content -->
-    <div class="banner">
 
-      <picture>
-        <source media="(max-width: 767px)" srcset="media/visit-mobile.webp">
-        <source media="(min-width: 768px) and (max-width: 1300px)" srcset="media/visit-tablet.webp">
-        <img src="media/visit-desktop.webp" id="visit-img" />
-      </picture>
-      
-      <div class="banner-overlay">
-        <div class="overlay-text">
-          <h1>Visit Us</h1>
-          <p> Located at Great Russell St. Easily accessible, our museum is situated in the heart of
-            London, inviting you to explore the marvels of our exhibits. </p>
+        <!-- Hamburger menu -->
+        <div class="hamburger">
+          <nav>
+            <input type="checkbox" id="hamburger-toggle" />
+            <label for="hamburger-toggle" class="hamburger-button" title="Open Menu">
+              <span class="material-symbols-outlined">menu</span>
+            </label>
+            <aside class="hamburger-menu">
+              <div class="top-section-hamburger flex align-center space-between">
+                <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger" alt="Clickable Logo" /></a>
+                <a href="visit.html" class="close-button"><span class="material-symbols-outlined"> close </span></a>
+              </div>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="active-hamburger">Visit</a>
+                </li>
+                <li>
+                  <a href="exhibits.html">Exhibits</a>
+                </li>
+                <li>
+                  <a href="events.html">Events</a>
+                </li>
+                <li>
+                  <a href="get-involved.html">Get Invovled</a>
+                </li>
+                <li>
+                  <a href="learn.html">Learn</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </aside>
+          </nav>
         </div>
       </div>
-    </div>
-    <div class="main-content headline">
-      <section class="box-shadow  ">
-        <h2>Opening Hours</h2>
-        <p>Plan your visit conveniently with our flexible hours:</p>
-        <ul>
-          <li>Monday: - Closed</li>
-          <li>Tuesday to Thursday: 10:00 - 16:00</li>
-          <li>Friday 10:00 - 19:00</li>
-          <li>Saturday: 09:00 - 16:00</li>
-          <li>Sunday: 09:00 - 13:00</li>
-        </ul>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6621888108534!2d-0.12953688683544726!3d51.51941327169839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b323093d307%3A0x2fb199016d5642a7!2sThe%20British%20Museum!5e0!3m2!1sen!2sno!4v1702288915401!5m2!1sen!2sno"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-      <section class="box-shadow">
-        <h2>Guided Tours</h2>
-        <p> Enhance your experience with our guided tours, departing every hour. Tours are 70 NOK
-          per person. Our guided tours provide a personalized and informative experience, allowing
-          you to delve deeper into the history, science, and art showcased within our walls. </p>
-        <p> As part of the tour package, each participant will receive a handy printed guide,
-          ensuring you won't miss any of the museum's highlights. This curated guide will serve as a
-          valuable companion, offering additional context and details about the exhibits you
-          encounter. </p>
-      </section>
-      <section class="box-shadow ">
-        <h2>Free Admission</h2>
-        <p>Explore without any cost! We are thrilled to offer free admission to our museum, inviting
-          everyone to explore the fascinating world of scientific wonders and cultural exhibits.</p>
-      </section>
-      <section class="box-shadow ">
-        <h2>Acessibility</h2>
-        <p> In our commitment to inclusivity, we strive to make the wonders of science accessible to
-          everyone. Our museum is designed with the following features to ensure a welcoming and
-          accommodating experience for all visitors: </p>
-        <h3>Wheelchair Accessibility Ramps:</h3>
-        <p> Navigating through our exhibits is made easy with thoughtfully designed wheelchair
-          accessibility ramps. We believe in providing a seamless and comfortable journey for
-          individuals with mobility challenges. </p>
-        <h3>Audio Guides:</h3>
-        <p> Enhance your visit with our audio guides, offering a narrated tour that provides
-          additional insights into each exhibit. Whether you prefer to listen to detailed
-          explanations or supplementary stories, our audio guides cater to a diverse range of
-          learning styles. </p>
-        <h3>Braille Display Signs:</h3>
-        <p> For our visually impaired visitors, we have implemented braille display signs
-          strategically placed throughout the museum. These tactile signs provide essential
-          information, allowing everyone to engage with the displays and exhibitions independently.
-        </p>
-        <p> At our museum, diversity is celebrated, and accessibility is a priority. We invite you
-          to explore the world of science with us, knowing that every effort has been made to ensure
-          an inclusive and enriching experience for all. </p>
-      </section>
-      <section class="box-shadow">
-        <h2>Food and Drink</h2>
-        <p> Visit our museum's delightful café, a perfect spot to unwind and refuel during your
-          exploration. Our café offers a diverse menu featuring Light lunches, soft drinks, coffe,
-          snacks and more </p>
-        <p> Our café provides a cozy atmosphere for you to relax, chat, and savor delicious treats.
-          Whether you're seeking a hearty meal or just a casual break, our café is here to enhance
-          your museum experience. Join us for a delightful culinary journey within the walls of
-          science and discovery. </p>
-      </section>
-      <section class="box-shadow">
-        <h2>Shop</h2>
-        <p>Our shop offers a range of memorabilia from the museum as well as great gifts and
-          activity packs that allow you to continue to explore science even after you’ve left the
-          museum.</p>
-      </section>
-    </div>
-    <!-- Main Content End -->
-  </main>
-  <!-- Main END -->
-  <!-- Footer -->
-  <footer class="footer">
-    <!-- Social Media -->
-    <div class="social-media flex justify-center align-center">
-      <a href="https://www.facebook.com" title="Facebook Link"><i
-          class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.instagram.com" title="Instagram Link"><i
-          class="fa-brands fa-square-instagram"></i></a>
-      <a href="https://www.twitter.com" title="Twitter Link"><i
-          class="fa-brands fa-square-twitter"></i></a>
-      <a href="https://www.youtube.com" title="Youtube Link"><i
-          class="fa-brands fa-square-youtube"></i></a>
-    </div>
-    <!-- Social Media END -->
-    <!-- Footer Container -->
-    <div class="footer-container flex">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html"><img class="img-flex" src="media/logo-desktop.png"
-            alt="Community Science Museum Logo" /></a>
-      </div>
-      <!-- Logo END -->
-      <!-- Opening Hours -->
-      <div class="opening-hours">
-        <ul>
-          <li>
-            <h2>Opening Hours</h2>
-          </li>
-          <li>
-            <h3>Monday: Closed</h3>
-          </li>
-          <li>
-            <h3>Tue - Thu 10:00 - 16:00</h3>
-          </li>
-          <li>
-            <a href="#">
-              <h3>See all opening hours</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Opening Hours END -->
-      <!-- Address -->
-      <div class="address">
-        <ul>
-          <li>
-            <h2>Address</h2>
-          </li>
-          <li>
-            <h3>Address something123</h3>
-          </li>
-          <li>
-            <h3>5020, Bergen</h3>
-          </li>
-          <li>
-            <h3>+47 55551010</h3>
-          </li>
-          <li>
-            <a href="about.html">
-              <h3>About</h3>
-            </a>
-          </li>
-          <li>
-            <a href="contact.html">
-              <h3>Contact</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Address END -->
-      <!-- Shortcuts -->
-      <div class="shortcuts">
-        <ul>
-          <li>
-            <h2>Shortcuts</h2>
-          </li>
-          <li>
-            <a href="index.html">
-              <h3>Home</h3>
-            </a>
-          </li>
-          <li>
-            <a href="exhibits.html">
-              <h3>Exhibits</h3>
-            </a>
-          </li>
-          <li>
-            <a href="events.html">
-              <h3>Events</h3>
-            </a>
-          </li>
-          <li>
-            <a href="get-involved.html">
-              <h3>Get Involved</h3>
-            </a>
-          </li>
-          <li>
-            <a href="learn.html">
-              <h3>Learn</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Shortcuts END -->
-    </div>
-    <!-- Footer Container END -->
-  </footer>
-  <!-- Footer END -->
-</body>
+    </header>
 
+    <main>
+      <!-- Banner -->
+      <div class="banner">
+        <picture>
+          <source media="(max-width: 480px)" srcset="media/visit-mobile.webp" />
+          <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/visit-tablet.webp" />
+          <img src="media/visit-desktop.webp" id="visit-img" alt="Statue of Charles Darwin at the community science museum entrance." />
+        </picture>
+        <div class="banner-overlay">
+          <div class="overlay-text">
+            <h1>Visit Us</h1>
+            <p>Located at Great Russell St. Easily accessible, our museum is situated in the heart of London, inviting you to explore the marvels of our exhibits.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Main Content-->
+      <div class="main-content headline">
+        <!--Section 1-->
+        <section class="card">
+          <h2>Opening Hours</h2>
+          <p>Plan your visit with our flexible hours:</p>
+          <ul>
+            <li>Monday: - Closed</li>
+            <li>Tuesday to Thursday: 10:00 - 16:00</li>
+            <li>Friday 10:00 - 19:00</li>
+            <li>Saturday: 09:00 - 16:00</li>
+            <li>Sunday: 09:00 - 13:00</li>
+          </ul>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6621888108534!2d-0.12953688683544726!3d51.51941327169839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b323093d307%3A0x2fb199016d5642a7!2sThe%20British%20Museum!5e0!3m2!1sen!2sno!4v1702288915401!5m2!1sen!2sno"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google maps"
+          ></iframe>
+        </section>
+
+        <!--Divider-->
+        <div class="horizontal-line">
+          <hr class="divider" />
+          <hr class="divider2" />
+        </div>
+
+        <!--Section 2-->
+        <section class="card">
+          <h2>Guided Tours</h2>
+          <p>
+            Enhance your experience with our guided tours, departing every hour. Tours are 70 NOK per person. Our guided tours provide a personalized and informative experience, allowing you to delve
+            deeper into the history, science, and art showcased within our walls.
+          </p>
+          <p>
+            As part of the tour package, each participant will receive a handy printed guide, ensuring you won't miss any of the museum's highlights. This curated guide will serve as a valuable
+            companion, offering additional context and details about the exhibits you encounter.
+          </p>
+        </section>
+
+        <!--Divider-->
+        <div class="horizontal-line">
+          <hr class="divider" />
+          <hr class="divider2" />
+        </div>
+
+        <!--Section 3-->
+        <section class="card">
+          <h2>Free Admission</h2>
+          <p>Explore without any cost! We are thrilled to offer free admission to our museum, inviting everyone to explore the fascinating world of scientific wonders and cultural exhibits.</p>
+        </section>
+
+        <!--Divider-->
+        <div class="horizontal-line">
+          <hr class="divider" />
+          <hr class="divider2" />
+        </div>
+
+        <!--Section 4-->
+        <section class="card">
+          <h2>Acessibility</h2>
+          <p>
+            In our commitment to inclusivity, we strive to make the wonders of science accessible to everyone. Our museum is designed with the following features to ensure a welcoming and
+            accommodating experience for all visitors:
+          </p>
+          <h3>Wheelchair Accessibility Ramps:</h3>
+          <p>
+            Navigating through our exhibits is made easy with thoughtfully designed wheelchair accessibility ramps. We believe in providing a seamless and comfortable journey for individuals with
+            mobility challenges.
+          </p>
+          <h3>Audio Guides:</h3>
+          <p>
+            Enhance your visit with our audio guides, offering a narrated tour that provides additional insights into each exhibit. Whether you prefer to listen to detailed explanations or
+            supplementary stories, our audio guides cater to a diverse range of learning styles.
+          </p>
+          <h3>Braille Display Signs:</h3>
+          <p>
+            For our visually impaired visitors, we have implemented braille display signs strategically placed throughout the museum. These tactile signs provide essential information, allowing
+            everyone to engage with the displays and exhibitions independently.
+          </p>
+          <p>
+            At our museum, diversity is celebrated, and accessibility is a priority. We invite you to explore the world of science with us, knowing that every effort has been made to ensure an
+            inclusive and enriching experience for all.
+          </p>
+        </section>
+
+        <!--Divider-->
+        <div class="horizontal-line">
+          <hr class="divider" />
+          <hr class="divider2" />
+        </div>
+
+        <!--Section 5-->
+        <section class="card">
+          <h2>Food and Drink</h2>
+          <p>
+            Visit our museum's delightful café, a perfect spot to unwind and refuel during your exploration. Our café offers a diverse menu featuring Light lunches, soft drinks, coffe, snacks and more
+          </p>
+          <p>
+            Our café provides a cozy atmosphere for you to relax, chat, and savor delicious treats. Whether you're seeking a hearty meal or just a casual break, our café is here to enhance your museum
+            experience. Join us for a delightful culinary journey within the walls of science and discovery.
+          </p>
+        </section>
+
+        <!--Divider-->
+        <div class="horizontal-line">
+          <hr class="divider" />
+          <hr class="divider2" />
+        </div>
+
+        <!--Section 6-->
+        <section class="card">
+          <h2>Shop</h2>
+          <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Social Media -->
+      <div class="social-media flex justify-center align-center">
+        <a href="https://www.facebook.com" title="Facebook Link"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.instagram.com" title="Instagram Link"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.twitter.com" title="Twitter Link"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="https://www.youtube.com" title="Youtube Link"><i class="fa-brands fa-square-youtube"></i></a>
+      </div>
+
+      <!--Footer Container-->
+      <div class="footer-container flex space-between wrap">
+        <!--Logo-->
+        <div class="logo-footer flex align-center">
+          <a href="index.html">
+            <img src="media/logo-desktop.png" alt="Community Science Museum Logo" class="logo" />
+          </a>
+        </div>
+
+        <!--Shortcuts-->
+        <div class="footer-item">
+          <h2>Shortcuts</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="exhibits.html">Exhibits</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="learn.html">Learn</a></li>
+          </ul>
+        </div>
+
+        <!--Opening Hours-->
+        <div class="footer-item">
+          <h2>Opening Hours</h2>
+          <ul>
+            <li>Monday: Closed</li>
+            <li>Tue - Thu 10:00 - 16:00</li>
+            <li><a href="visit.html">See all opening hours</a></li>
+          </ul>
+        </div>
+
+        <!--Address-->
+        <div class="footer-item">
+          <h2>Address</h2>
+          <address>
+            Great Russell St<br />
+            WC1B 3DG, London<br />
+            <a href="tel:+442073238299">+44 2073238299</a>
+          </address>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--Upcoming Events-->
+        <div class="footer-item">
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li>Night in the museum</li>
+            <li>Energetica Exhibition</li>
+            <li>Visiting Professor of Aeronautics</li>
+            <li><a href="events.html">See all Events</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Copyright-->
+      <div class="copyright flex justify-center align-center">
+        <p>Copyright &copy; 2023 Community Science Museum</p>
+      </div>
+    </footer>
+  </body>
 </html>
