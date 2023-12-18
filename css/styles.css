@@ -185,9 +185,17 @@ header {
   gap: 10px;
 }
 
-#img1 {grid-area: img1;}
-#img2 {grid-area: img2;}
-#img3 {grid-area: img3;}
+#img1 {
+  grid-area: img1;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
 
 /* Container main content */
 .main-content {
@@ -199,30 +207,30 @@ header {
 }
 
 /* Create margin below sections on the homepage */
-.main-content.margin-section > section{
+.main-content.margin-section>section {
   margin-bottom: 120px;
 }
 
-.main-content img{
+.main-content img {
   max-height: 400px;
 }
 
 /* Upcoming events */
 .events {
-  transition: transform 0.3s ease, border 0.3s ease; 
-  cursor: pointer; 
-  border: 2px solid transparent; 
+  transition: transform 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
   margin-bottom: 150px;
 }
 
 .events p,
-.events h3{
+.events h3 {
   padding: 10px;
 }
 
 .events:hover {
-  transform: scale(1.02); 
-  border: 2px solid rgb(218, 139, 22); 
+  transform: scale(1.02);
+  border: 2px solid rgb(218, 139, 22);
 }
 
 .button-section {
@@ -274,6 +282,10 @@ header {
   padding: 10px;
 }
 
+.exhibits h2 {
+  color: var(--title-text-color);
+}
+
 .card {
   border-radius: 8px;
   background-color: #333333;
@@ -303,11 +315,25 @@ header {
   padding: 20px;
 }
 
-.cosmology-filter {filter: drop-shadow(0 0 0.35rem #20343D);}
-.evolution-filter {filter: drop-shadow(0 0 0.35rem #9F7633);}
-.biology-filter {filter: drop-shadow(0 0 0.35rem #B9BFC1);}
-.robotics-filter {filter: drop-shadow(0 0 0.35rem #264b5c);}
-.ecology-filter {filter: drop-shadow(0 0 0.15rem #D8CFD4);}
+.cosmology-filter {
+  filter: drop-shadow(0 0 0.35rem #20343D);
+}
+
+.evolution-filter {
+  filter: drop-shadow(0 0 0.35rem #9F7633);
+}
+
+.biology-filter {
+  filter: drop-shadow(0 0 0.35rem #B9BFC1);
+}
+
+.robotics-filter {
+  filter: drop-shadow(0 0 0.35rem #264b5c);
+}
+
+.ecology-filter {
+  filter: drop-shadow(0 0 0.15rem #D8CFD4);
+}
 
 .banner {
   position: relative;
@@ -326,7 +352,7 @@ header {
   height: 100%;
   background-image: linear-gradient(rgba(10, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   margin: 0 auto;
-  
+
 }
 
 .overlay-text {
@@ -336,7 +362,7 @@ header {
 }
 
 .overlay-text h1,
-.overlay-text p{
+.overlay-text p {
   max-width: 500px;
 }
 
@@ -453,7 +479,7 @@ footer {
   padding-right: 10px;
 }
 
-.social-media a img{
+.social-media a img {
   height: 40px;
 }
 
@@ -518,12 +544,17 @@ footer h3 {
 
 
 /* Headline */
-.main-content.headline h2 {
+.title h2 {
   color: var(--title-text-color);
   font-family: var(--second-font);
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0;
+}
+
+.emphasis h2,
+.emphasis h3 {
+  color: var(--title-text-color);
 }
 
 
@@ -536,13 +567,13 @@ footer h3 {
   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 @media only screen and (max-width: 768px) {
 
-  .main-content{
+  .main-content {
     margin-left: 10px;
     margin-right: 10px;
     padding: 5%;
   }
 
-  .main-content.margin-section > section{
+  .main-content.margin-section>section {
     margin-bottom: 80px;
   }
 
@@ -594,6 +625,7 @@ footer h3 {
   .top-section-hamburger {
     border-bottom: 1px solid white;
     padding: 10px;
+    background-color: var(--navbar-color);
   }
 
   #logo-hamburger {
@@ -634,7 +666,7 @@ footer h3 {
   }
 
   .overlay-text {
-   width: 90%
+    width: 90%
   }
 
   .banner,
@@ -681,7 +713,7 @@ footer h3 {
   }
 
   /* Headline tablet */
-  .main-content.headline h2 {
+  .title h2 {
     font-size: 28px;
     line-height: 36px;
   }
@@ -694,7 +726,7 @@ footer h3 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .form{
+  .form {
     max-height: 600px;
   }
 }
@@ -736,7 +768,7 @@ footer h3 {
   }
 
   /* Headline Mobile */
-  .main-content.headline h2 {
+  .title h2 {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0;

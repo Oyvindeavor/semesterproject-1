@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <title>Home - Community Science Museum - explore together</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to the Community Science Museum. Lets Explore together and discover the wonders of science." />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Welcome to the Community Science Museum. Lets Explore together and discover the wonders of science." >
+    <link rel="icon" href="favicon.ico" type="image/x-icon" >
 
     <!-- Preloading hero img for different screen sizes -->
-    <link rel="preload" as="image" href="media/hero-desktop.webp" type="image" media="(min-width: 1025px)" />
-    <link rel="preload" as="image" href="media/hero-tablet.webp" type="image" media="(min-width: 481px) and (max-width: 1024px)" />
-    <link rel="preload" as="image" href="media/hero-mobile.webp" type="image" media="(max-width: 480px)" />
+    <link rel="preload" as="image" href="media/hero-desktop.webp" type="image/webp" media="(min-width: 1025px)" >
+    <link rel="preload" as="image" href="media/hero-tablet.webp" type="image/webp"  media="(min-width: 768px)" >
+    <link rel="preload" as="image" href="media/hero-mobile.webp" type="image/webp" media="(max-width: 480px)">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Exo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Exo:wght@400;700&display=swap" rel="stylesheet" >
   </head>
 
   <body>
@@ -24,7 +24,7 @@
       <div class="navbar flex space-between align-center">
         <!-- Logo -->
         <div class="logo flex align-center">
-          <a href="index.html"><img src="media/logo-desktop.png" alt="Community Science Museum logo" /></a>
+          <a href="index.html"><img src="media/logo-desktop.png" alt="Community Science Museum logo" ></a>
         </div>
         <!-- Navigation -->
         <nav class="navigation">
@@ -43,14 +43,14 @@
         <!-- Hamburger menu -->
         <div class="hamburger">
           <nav>
-            <input type="checkbox" id="hamburger-toggle" />
+            <input type="checkbox" id="hamburger-toggle" >
             <label for="hamburger-toggle" class="menu-buttons" title="Open Menu">
-              <img src="media/icons/hamburger-menu.svg" alt="Menu">
+              <img src="media/icons/hamburger-menu.svg" alt="Menu" >
             </label>
             <aside class="hamburger-menu">
               <div class="top-section-hamburger flex align-center space-between">
-                <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger" alt="Community Science Museum logo" /></a>
-                <a href="index.html" class="menu-buttons"><img src="media/icons/close.svg" alt="close button"></a>
+                <a href="index.html"><img src="media/logo-desktop.png" id="logo-hamburger" alt="Community Science Museum logo" ></a>
+                <a href="index.html" class="menu-buttons"><img src="media/icons/close.svg" alt="close button" ></a>
               </div>
               <ul>
                 <li>
@@ -90,7 +90,7 @@
         <div class="hero-text-container flex center-everything direction-column">
           <h1 class="hero-text">Explore Together</h1>
           <p>
-            Join us in unraveling science's mysteries <br />
+            Join us in unraveling science's mysteries <br >
             and showcasing human marvels.
           </p>
           <a class="community-science-cta button-section flex" href="visit.html">Plan your visit!</a>
@@ -98,208 +98,188 @@
       </section>
 
       <!-- Main Content-->
-      <div class="main-content margin-section headline">
+      <div class="main-content margin-section">
         <!--Events-->
-        <div class="horizontal-line">
-            <h2>Upcoming Events</h2>
-
-            <div class="flex direction-column">
-              <hr class="divider" />
-              <hr class="divider2" />
-            </div>
-          </div>
-        <div class="grid sidebyside">
-
-          <!--Article-->
-          <article class="events">
-            <picture>
-              <source media="(max-width: 480px)" srcset="media/event-professor-mobile.webp" />
-              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/event-professor-tablet.webp" />
-              <a href="events.html"><img src="media/event-professor-desktop.webp" alt="Banner for a talk on aeronautics by Professor Sheila Widnall on January 23, 12:00 - 14:00" loading="lazy"/></a>
-            </picture>
-            <h3>Guest Lecture: Aeronautics Future</h3>
-            <p>Join Prof Sheila Widnall from MIT for three insightful lectures on aeronautics and its future directions.</p>
-          </article>
-
-          <!--Article 2-->
-          <article class="events">
-            <picture>
-              <source media="(max-width: 480px)" srcset="media/event-energetica-mobile.webp" />
-              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/event-energetica-tablet.webp" />
-              <a href="events.html"><img src="media/event-energetica-desktop.webp" alt="Banner ENERGETICA EXHIBITION, January 15 at community science museum" loading="lazy"/></a>
-              
-            </picture>
-            <h3>Energetica: Interactive Energy Exhibit</h3>
-            <p>Discover the Energetica exhibition, on loan from Amsterdam's NEMO Science Museum-</p>
-          </article>
-        </div>
-
-        <div class="horizontal-line">
-          
+        <div class="horizontal-line emphasis">
+          <h2 class="emphasis">Upcoming Events</h2>
 
           <div class="flex direction-column">
-            <hr class="divider" />
-            <hr class="divider2" />
+            <hr class="divider" >
+            <hr class="divider2" >
           </div>
         </div>
+        <div class="grid sidebyside">
+          <article class="events">
+            <a href="events.html">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="media/event-professor-mobile.webp">
+                    <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/event-professor-tablet.webp">
+                    <img src="media/event-professor-desktop.webp" alt="Banner for a talk on aeronautics by Professor Sheila Widnall on January 23, 12:00 - 14:00" loading="lazy">
+                </picture>
+            </a>
+            <h3>Guest Lecture: Aeronautics Future</h3>
+            <p>Join Prof Sheila Widnall from MIT for three insightful lectures on aeronautics and its future directions.</p>
+        </article>
         
+        <!-- Article 2 -->
+        <article class="events">
+            <a href="events.html">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="media/event-energetica-mobile.webp">
+                    <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/event-energetica-tablet.webp">
+                    <img src="media/event-energetica-desktop.webp" alt="Banner ENERGETICA EXHIBITION, January 15 at community science museum" loading="lazy">
+                </picture>
+            </a>
+            <h3>Energetica: Interactive Energy Exhibit</h3>
+            <p>Discover the Energetica exhibition, on loan from Amsterdam's NEMO Science Museum-</p>
+        </article>
+        </div>
 
         <!-- Section 1 -->
         <section>
-          <div class="horizontal-line">
+          <div class="horizontal-line title">
             <h2>Community Science Museum</h2>
             <div class="flex direction-column">
-              <hr class="divider" />
-              <hr class="divider2" />
+              <hr class="divider" >
+              <hr class="divider2" >
             </div>
           </div>
-          
-            <picture>
-              <source media="(max-width: 480px)" srcset="media/about-us-mobile.webp" />
-              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/about-us-tablet.webp" />
-              <img src="media/test-aboutus.webp" id="about-us-img"  alt="Elephant statue, crowd of people gathering around." />
-            </picture>
-            <p>
-              Welcome to the Community Science Museum — where curiosity knows no bounds! Immerse yourself in the wonders of science with FREE admission for all. Explore interactive exhibits, join
-              thrilling events, and ignite your passion for discovery. Let's embark on a journey of learning and fun together!
-            </p>
-            <a class="button-section flex" href="about.html"> About us </a>
-          
+
+          <picture>
+            <source media="(max-width: 480px)" srcset="media/about-us-mobile.webp" >
+            <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/about-us-tablet.webp" >
+            <img src="media/test-aboutus.webp" id="about-us-img" alt="Elephant statue, crowd of people gathering around." >
+          </picture>
+          <p>
+            Welcome to the Community Science Museum — where curiosity knows no bounds! Immerse yourself in the wonders of science with FREE admission for all. Explore interactive exhibits, join
+            thrilling events, and ignite your passion for discovery. Let's embark on a journey of learning and fun together!
+          </p>
+          <a class="button-section flex" href="about.html"> About us </a>
         </section>
 
-   
         <!-- Section 2 -->
         <section>
-          <div class="horizontal-line">
+          <div class="horizontal-line title">
             <h2>Explore</h2>
             <div class="flex direction-column">
-              <hr class="divider" />
-              <hr class="divider2" />
+              <hr class="divider" >
+              <hr class="divider2" >
             </div>
           </div>
-          
-            <div class="image-container">
-              <picture id="img1">
-                <source media="(max-width: 480px)" srcset="media/img1-mobile.webp" />
-                <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/img1-tablet.webp" />
-                <img src="media/img1-desktop.webp" alt="technology sphere exhibtion 2 people looking at the spheres covered in screens" loading="lazy" />
-              </picture>
-              <picture id="img2">
-                <source media="(max-width: 480px)" srcset="media/img2-mobile.webp" />
-                <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/img2-tablet.webp" />
-                <img src="media/img2-desktop.webp" alt="man looking at a huge globe hanging from the ceiling of the earth" loading="lazy" />
-              </picture>
-              <picture id="img3">
-                <source media="(max-width: 480px)" srcset="media/image-3-mobile.webp" />
-                <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/image-3-tablet.webp" />
-                <img src="media/image-3-desktop.webp" alt="main in a yellow spacesuit and a white space helmet in a cockpit simulation" loading="lazy" />
-              </picture>
-            </div>
-            <p>
-              Explore our interactive exhibits, From cosmic enigmas to intricate robotics, our diverse displays offer a unique and engaging experience for all. Whether you're a curious lealrner,
-              seasoned researcher, or a science enthusiast, an extraordinary journey awaits. Join us in unraveling the universe's mysteries, making science an accessible adventure for everyone.
-            </p>
-            <a href="exhibits.html" class="button-section flex">Explore Exhibits</a>
-         
+
+          <div class="image-container">
+            <picture id="img1">
+              <source media="(max-width: 480px)" srcset="media/img1-mobile.webp" >
+              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/img1-tablet.webp" >
+              <img src="media/img1-desktop.webp" alt="technology sphere exhibtion 2 people looking at the spheres covered in screens" loading="lazy" >
+            </picture>
+            <picture id="img2">
+              <source media="(max-width: 480px)" srcset="media/img2-mobile.webp" >
+              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/img2-tablet.webp" >
+              <img src="media/img2-desktop.webp" alt="man looking at a huge globe hanging from the ceiling of the earth" loading="lazy" >
+            </picture>
+            <picture id="img3">
+              <source media="(max-width: 480px)" srcset="media/image-3-mobile.webp" >
+              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/image-3-tablet.webp" >
+              <img src="media/image-3-desktop.webp" alt="main in a yellow spacesuit and a white space helmet in a cockpit simulation" loading="lazy" >
+            </picture>
+          </div>
+          <p>
+            Explore our interactive exhibits, From cosmic enigmas to intricate robotics, our diverse displays offer a unique and engaging experience for all. Whether you're a curious lealrner,
+            seasoned researcher, or a science enthusiast, an extraordinary journey awaits. Join us in unraveling the universe's mysteries, making science an accessible adventure for everyone.
+          </p>
+          <a href="exhibits.html" class="button-section flex">Explore Exhibits</a>
         </section>
 
         <!--Section 3-->
         <section>
-          <div class="horizontal-line">
+          <div class="horizontal-line title">
             <h2>Explore Together</h2>
             <div class="flex direction-column">
-              <hr class="divider" />
-              <hr class="divider2" />
+              <hr class="divider" >
+              <hr class="divider2" >
             </div>
           </div>
-          
-            <picture>
-              <source media="(max-width: 480px)" srcset="media/engage-family-mobile.webp" />
-              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/engage-family-tablet.webp" />
-              <img src="media/engage-family-desktop.webp" class="box-shadow2" alt="mother and child looking at old pottery in an old amphores museum" loading="lazy" />
-            </picture>
-            <p>
-              From the marvels of physics to encounters with ancient creatures, our curated experiences cater to every member of your group. Join us in making science an adventure meant to be shared.
-              Explore, learn, and create lasting memories.
-            </p>
-          
+
+          <picture>
+            <source media="(max-width: 480px)" srcset="media/engage-family-mobile.webp" >
+            <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/engage-family-tablet.webp" >
+            <img src="media/engage-family-desktop.webp" class="box-shadow2" alt="mother and child looking at old pottery in an old amphores museum" loading="lazy" >
+          </picture>
+          <p>
+            From the marvels of physics to encounters with ancient creatures, our curated experiences cater to every member of your group. Join us in making science an adventure meant to be shared.
+            Explore, learn, and create lasting memories.
+          </p>
         </section>
 
         <!--Section 4-->
         <section>
-          <div class="horizontal-line">
+          <div class="horizontal-line title">
             <h2>Events</h2>
             <div class="flex direction-column">
-              <hr class="divider" />
-              <hr class="divider2" />
+              <hr class="divider" >
+              <hr class="divider2" >
             </div>
           </div>
-          
-            <div class="grid sidebyside">
-              <picture>
-                <source media="(max-width: 480px)" srcset="media/events-img1-mobile.webp" />
-                <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/events-img1-tablet.webp" />
-                <img src="media/events-img1-desktop.webp" alt="child looking through a virtual reality headset blue lights in the background" loading="lazy" />
-              </picture>
-              <picture>
-                <source media="(max-width: 480px)" srcset="media/events-img2-mobile.webp" />
-                <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/events-img2-tablet.webp" />
-                <img src="media/events-img2-desktop.webp" alt="woman in a crowd on an event reaching her hand up" loading="lazy" />
-              </picture>
-            </div>
-            <p>
-              Immerse yourself in a calendar of captivating events that go beyond the ordinary at our Community Science Museum. From thought-provoking lectures by distinguished experts to hands-on
-              workshops for all ages, our upcoming events promise an experience that sparks curiosity and fosters a love for discovery.
-            </p>
-            <a class="button-section flex" href="events.html">Explore Events</a>
-          
+
+          <div class="grid sidebyside">
+            <picture>
+              <source media="(max-width: 480px)" srcset="media/events-img1-mobile.webp" >
+              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/events-img1-tablet.webp" >
+              <img src="media/events-img1-desktop.webp" alt="child looking through a virtual reality headset blue lights in the background" loading="lazy" >
+            </picture>
+            <picture>
+              <source media="(max-width: 480px)" srcset="media/events-img2-mobile.webp" >
+              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/events-img2-tablet.webp" >
+              <img src="media/events-img2-desktop.webp" alt="woman in a crowd on an event reaching her hand up" loading="lazy" >
+            </picture>
+          </div>
+          <p>
+            Immerse yourself in a calendar of captivating events that go beyond the ordinary at our Community Science Museum. From thought-provoking lectures by distinguished experts to hands-on
+            workshops for all ages, our upcoming events promise an experience that sparks curiosity and fosters a love for discovery.
+          </p>
+          <a class="button-section flex" href="events.html">Explore Events</a>
         </section>
 
         <!--Section 5-->
         <section>
-          <div class="horizontal-line">
+          <div class="horizontal-line title">
             <h2>Learn</h2>
             <div class="flex direction-column">
-              <hr class="divider" />
-              <hr class="divider2" />
+              <hr class="divider" >
+              <hr class="divider2" >
             </div>
           </div>
-          
-            <picture>
-              <source media="(max-width: 480px)" srcset="media/learn-section-mobile.webp" />
-              <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/learn-section-tablet.webp" />
-              <img src="media/learn-section-desktop.webp" alt="Old statue holding a pigeon looking up in the air, crowds of people in the background" loading="lazy" />
-            </picture>
-            <p>
-              Discover tailored learning experiences for students, teachers, and researchers. Dive into interactive exhibits, collaborate on curriculum enhancements, and explore online resources.
-              Ignite curiosity and foster knowledge with us.
-            </p>
-            <a class="button-section flex" href="learn.html">Explore Learning</a>
-          
-        </section>
-      
 
+          <picture>
+            <source media="(max-width: 480px)" srcset="media/learn-section-mobile.webp" >
+            <source media="(min-width: 481px) and (max-width: 768px)" srcset="media/learn-section-tablet.webp" >
+            <img src="media/learn-section-desktop.webp" alt="Old statue holding a pigeon looking up in the air, crowds of people in the background" loading="lazy" >
+          </picture>
+          <p>
+            Discover tailored learning experiences for students, teachers, and researchers. Dive into interactive exhibits, collaborate on curriculum enhancements, and explore online resources. Ignite
+            curiosity and foster knowledge with us.
+          </p>
+          <a class="button-section flex" href="learn.html">Explore Learning</a>
+        </section>
       </div>
-      
     </main>
 
     <footer>
-
       <!--Social Media-->
       <div class="social-media flex justify-center align-center">
-        <a href="https://www.facebook.com" title="Facebook Link" rel="noopener noreferrer"><img src="media/icons/square-facebook.svg" alt="Facebook"></a>
-        <a href="https://www.instagram.com" title="Instagram Link" rel="noopener noreferrer"><img src="media/icons/square-instagram.svg" alt="Instagram"></a>
-        <a href="https://www.twitter.com" title="Twitter Link" rel="noopener noreferrer"><img src="media/icons/square-twitter.svg" alt="Twitter"></i></a>
-        <a href="https://www.youtube.com" title="Youtube Link" rel="noopener noreferrer"><img src="media/icons/square-youtube.svg" alt="Youtube"></i></a>
+        <a href="https://www.facebook.com" title="Facebook Link" rel="noopener noreferrer"><img src="media/icons/square-facebook.svg" alt="Facebook" ></a>
+        <a href="https://www.instagram.com" title="Instagram Link" rel="noopener noreferrer"><img src="media/icons/square-instagram.svg" alt="Instagram" ></a>
+        <a href="https://www.twitter.com" title="Twitter Link" rel="noopener noreferrer"><img src="media/icons/square-twitter.svg" alt="Twitter" ></a>
+        <a href="https://www.youtube.com" title="Youtube Link" rel="noopener noreferrer"><img src="media/icons/square-youtube.svg" alt="Youtube" ></a>
       </div>
 
       <!--Footer Container-->
       <div class="footer-container flex space-between wrap">
-
         <!--Logo-->
         <div class="logo-footer flex align-center">
           <a href="index.html">
-            <img src="media/logo-desktop.png" alt="Community Science Museum Logo" class="logo" />
+            <img src="media/logo-desktop.png" alt="Community Science Museum Logo" class="logo" >
           </a>
         </div>
 
@@ -329,8 +309,8 @@
         <div class="footer-item">
           <h2>Address</h2>
           <address>
-            Great Russell St<br />
-            WC1B 3DG, London<br />
+            Great Russell St<br >
+            WC1B 3DG, London<br >
             <a href="tel:+442073238299">+44 2073238299</a>
           </address>
           <ul>
