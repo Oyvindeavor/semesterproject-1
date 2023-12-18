@@ -94,11 +94,10 @@
           <img src="media/contact-desktop.webp" alt="Friendly robot with a humanoid face and blue accent lights" />
         </picture>
         <div class="banner-overlay">
-          <div class="overlay-text">
+          <div class="overlay-text flex center-everything direction-column">
             <h1>Contact</h1>
             <p>
-              Have questions, feedback, or just want to share your enthusiasm for science? We'd love to hear from you! Your curiosity and insights are always welcome. Pepper the robot is very eager to
-              hear from you.
+              Have questions, feedback, or just want to share your enthusiasm for science? We'd love to hear from you! Your curiosity and insights are always welcome.
             </p>
           </div>
         </div>
@@ -107,8 +106,16 @@
       <!-- Main Content -->
       <div class="main-content headline">
         <!--Form-->
-        <form action="contact-mock.html" class="flex direction-column form box-shadow">
-          <h2>Send us a Message</h2>
+        <form action="contact-mock.html" class="flex direction-column form ">
+
+          <div class="horizontal-line">
+            <h2>Send us a Message</h2>
+            <div class="flex direction-column">
+              <hr class="divider" />
+              <hr class="divider2" />
+            </div>
+          </div>
+          
           <p>Have a specific inquiry or message? Use the form below to get in touch.</p>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -116,7 +123,7 @@
           <input type="email" id="email" name="email" required />
           <label for="topic"> Whats it about?</label>
           <select id="topic" name="topic" required>
-            <option value="">General Inquiry</option>
+            <option value="">-</option>
             <option value="feedback">Feedback</option>
             <option value="support">Support</option>
             <option value="internship">Internship</option>
