@@ -615,6 +615,9 @@ footer h3 {
     font-family: var(--second-font);
   }
 
+.events{
+  margin-bottom: 40px;
+}
 
   /* Size for the close icon */
   .menu-buttons img {
