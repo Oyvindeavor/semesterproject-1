@@ -220,12 +220,15 @@ header {
   transition: transform 0.3s ease, border 0.3s ease;
   cursor: pointer;
   border: 2px solid transparent;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
+  padding: 0;
 }
 
 .events p,
 .events h3 {
   padding: 10px;
+  margin: 0;
+  line-height: 18px;
 }
 
 .events:hover {
