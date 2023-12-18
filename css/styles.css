@@ -398,8 +398,10 @@ iframe {
   display: flex;
 }
 
-.dropdown-toggle-button span {
+.dropdown-toggle-button img {
   transition: transform 0.3s ease;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .dropdown-content {
@@ -411,7 +413,7 @@ iframe {
   display: block;
 }
 
-.toggle-checkbox:checked+.dropdown-toggle-button span {
+.toggle-checkbox:checked+.dropdown-toggle-button img {
   transform: rotate(180deg);
 }
 
