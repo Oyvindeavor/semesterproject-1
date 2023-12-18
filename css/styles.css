@@ -480,7 +480,7 @@ footer {
   color: white;
   height: 40px;
   padding-right: 10px;
-  
+
 }
 
 .social-media a img {
@@ -596,6 +596,10 @@ footer h3 {
     transition: all 0.5s;
   }
 
+  .sidebyside.eventspage {
+    grid-template-columns: 1fr;
+  }
+
   /* Hamburger Menu */
   .hamburger {
     display: block;
@@ -621,9 +625,9 @@ footer h3 {
     font-family: var(--second-font);
   }
 
-.events{
-  margin-bottom: 40px;
-}
+  .events {
+    margin-bottom: 40px;
+  }
 
   /* Size for the close icon */
   .menu-buttons img {
@@ -743,9 +747,6 @@ footer h3 {
 /* Media query for only mobile devices */
 @media only screen and (max-width: 480px) {
 
-.sidebyside.eventspage{
-  grid-template-columns: 1fr;
-}
 
   /* nav */
   #logo-hamburger {
