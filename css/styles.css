@@ -283,18 +283,16 @@ main {
 }
 
 .divider {
-  position: relative;
-  height: 3px;
+  height: 2px;
   background: #E57373;
-  /* The base color of the divider */
+  border-color: #E57373;
   margin-bottom: 5px;
-  width: 100%;
+
 }
 
 .divider2 {
   background: white;
-  height: 3px;
-  width: 100%;
+  height: 2px;
   margin-bottom: 20px;
 }
 
