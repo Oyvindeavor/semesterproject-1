@@ -479,13 +479,14 @@ footer {
 .social-media a {
   color: white;
   height: 40px;
-  width: auto;
   padding-right: 10px;
+  
 }
 
 .social-media a img {
-  height: 40px;
-  width: auto;
+  width: 30px;
+  height: 30px;
+
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
