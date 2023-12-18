@@ -114,7 +114,7 @@ header {
 }
 
 .logo {
-  height: auto;
+
   width: 140px;
 }
 
@@ -192,9 +192,9 @@ header {
 /* Container main content */
 .main-content {
   margin: 0 auto;
-  padding: 3%;
+  padding: 2%;
   transition: ease all .5s;
-  max-width: 1100px;
+  max-width: 1000px;
   background-color: #1e1c1b;
 }
 
@@ -203,13 +203,11 @@ header {
   margin-bottom: 120px;
 }
 
-
-.box-shadow {
-  box-shadow: var(--box-shadow);
-  padding: 20px;
-  border-radius: 10px;
-  transition: ease all .5s;
+.main-content img{
+  max-height: 400px;
 }
+
+
 
 .button-section {
   display: flex;
@@ -271,12 +269,6 @@ header {
   margin-bottom: 20px;
 }
 
-.about-card {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(205, 171, 171, 0.1);
-}
 
 .divider {
   height: 2px;
@@ -347,6 +339,8 @@ iframe {
   border-radius: 10px;
   font-family: var(--body-text-font);
   margin: 0 auto;
+  max-width: 800px;
+
 }
 
 .form input {
@@ -367,76 +361,11 @@ iframe {
   font-family: var(--second-font);
 }
 
-/* Fun fact/did you know section */
-.did-you-know {
-  position: relative;
-  background-color: #f0f9ff;
-  border-left: 5px solid #E85220;
-  padding: 20px;
-  margin: 40px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: ease-in-out 0.5s;
-  margin-bottom: 60px;
-  margin-top: 100px;
-}
-
-/* Checkbox */
-.toggle-checkbox {
-  display: none;
-}
-
-.dropdown-toggle-button {
-  background-color: #E85220;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 10px;
-  font-family: var(--second-font);
-  height: 40px;
-  width: 130px;
-  display: flex;
-}
-
-.dropdown-toggle-button img {
-  transition: transform 0.3s ease;
-  width: 20px;
-  margin-right: 10px;
-}
-
-.dropdown-content {
-  display: none;
-  padding-top: 10px;
-}
-
-.toggle-checkbox:checked+.dropdown-toggle-button+.dropdown-content {
-  display: block;
-}
-
-.toggle-checkbox:checked+.dropdown-toggle-button img {
-  transform: rotate(180deg);
-}
-
-.did-you-know h3 {
-  color: #E85220;
-  margin-top: 0;
-}
-
-.did-you-know p {
-  color: #000000;
-  font-size: 16px;
-}
-
 .main-content li {
   margin-bottom: 5px;
   padding-left: 5px;
 }
 
-.events {
-  background-color: #201c1b;
-  margin-bottom: 100px;
-}
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
   ┃                 Footer                    ┃
@@ -492,11 +421,10 @@ footer {
   margin-bottom: 20px;
 }
 
-.logo {
-  width: 120px;
-}
+/* =======================
+     =Social Media icons
+   ======================= */
 
-/* Social media icons */
 .social-media {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -594,8 +522,9 @@ footer h3 {
 @media only screen and (max-width: 768px) {
 
   .main-content{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5%;
   }
 
   .main-content.margin-section > section{
@@ -748,6 +677,10 @@ footer h3 {
 
   .sidebyside {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .form{
+    max-height: 600px;
   }
 }
 
