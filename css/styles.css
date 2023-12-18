@@ -207,10 +207,25 @@ header {
   max-height: 400px;
 }
 
+/* Upcoming events */
+.events {
+  transition: transform 0.3s ease, border 0.3s ease; 
+  cursor: pointer; 
+  border: 2px solid transparent; 
+  margin-bottom: 150px;
+}
 
+.events p,
+.events h3{
+  padding: 10px;
+}
+
+.events:hover {
+  transform: scale(1.02); 
+  border: 2px solid rgb(218, 139, 22); 
+}
 
 .button-section {
-  display: flex;
   width: 150px;
   height: 41px;
   border: solid white 1px;
@@ -237,7 +252,7 @@ header {
 }
 
 .community-science-cta {
-  border: solid red;
+  border: solid rgb(255, 200, 0);
 }
 
 .community-science-cta:hover {
