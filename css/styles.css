@@ -503,8 +503,7 @@ footer {
 .social-media {
   padding-top: 40px;
   padding-bottom: 30px;
-  font-size: 40px;
-  color: white;
+
   border-bottom: 1px solid white;
 }
 
@@ -512,6 +511,10 @@ footer {
   color: white;
   height: 40px;
   padding-right: 10px;
+}
+
+.social-media a img{
+  height: 40px;
 }
 
 /*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
